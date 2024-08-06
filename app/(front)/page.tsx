@@ -1,4 +1,4 @@
-import Hero from "@/components/ui/FrontEnd/Hero";
+import Hero from "@/components/FrontEnd/Hero";
 import React from "react";
 
 export default async function Home() {
