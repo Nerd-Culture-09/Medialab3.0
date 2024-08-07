@@ -61,7 +61,7 @@ export default function Carousel() {
             }}
           >
             <span
-              className={`${textColors[index]} text-2xl font-semibold`} 
+              className={`${textColors[index]} text-2xl font-family: __Inter_aaf875, __Inter_Fallback_aaf875`} 
               style={{ textShadow: "2px 2px 4px rgba(0,0,0,0.5)" }} 
             >
               {slide.text}
