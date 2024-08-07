@@ -2,7 +2,7 @@
 
 import Carousel from "./Carousel"
 import Featured from "./Featured"
-
+import Blog from "./Blog"
 import { ModeToggle } from "./ModeToggle"
 
 export default function Hero() {
@@ -11,7 +11,7 @@ export default function Hero() {
     <div className="">
       <Carousel/>
       <Featured/>
-   
+      <Blog/>
       
       <div className="relative isolate px-6 pt-14 lg:px-8">
         <div
