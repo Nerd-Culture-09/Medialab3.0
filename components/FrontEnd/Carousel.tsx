@@ -12,10 +12,12 @@ export default function Carousel() {
   const [activeIndex, setActiveIndex] = useState<number>(0);
 
   const slides: Slide[] = [
-    { id: 0, src: "/next.svg", text: "SEBABATSO 1" },
-    { id: 1, src: "/versel.svg", text: "SEBABATSO 2" },
-    { id: 2, src: "/nu.png", text: "SEBABATSO 3" },
+    { id: 0, src: "/next.svg", text: "Sebabatso is empowering the next generation of leaders by connecting them to game-changing investment opportunities" },
+    { id: 1, src: "/versel.svg", text: "Bridging young entrepreneurs with their dream investors, this initiative, launched by Prime Minister Samuel Ntsokane Matekane, is fueling innovation across the globe" },
+    { id: 2, src: "/nu.png", text: "Sebabatso is the catalyst young innovators need, transforming ambition into achievement with a powerful network of support." },
   ];
+
+  const textColors = ["text-blue-500", "text-green-500", "text-red-500"]; // Different colors for each slide
 
   const handlePrev = () => {
     setActiveIndex((prevIndex) =>
@@ -58,7 +60,10 @@ export default function Carousel() {
               backgroundPosition: "center",
             }}
           >
-            <span className="text-red-500 text-4xl font-bold">
+            <span
+              className={`${textColors[index]} text-2xl font-semibold`} 
+              style={{ textShadow: "2px 2px 4px rgba(0,0,0,0.5)" }} 
+            >
               {slide.text}
             </span>
           </div>
