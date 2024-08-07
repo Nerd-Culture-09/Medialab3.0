@@ -12,9 +12,9 @@ export default function Carousel() {
   const [activeIndex, setActiveIndex] = useState<number>(0);
 
   const slides: Slide[] = [
-    { id: 0, src: "/next.svg", text: "Sebabatso is empowering the next generation of leaders by connecting them to game-changing investment opportunities" },
-    { id: 1, src: "/versel.svg", text: "Bridging young entrepreneurs with their dream investors, this initiative, launched by Prime Minister Samuel Ntsokane Matekane, is fueling innovation across the globe" },
-    { id: 2, src: "/nu.png", text: "Sebabatso is the catalyst young innovators need, transforming ambition into achievement with a powerful network of support." },
+    { id: 0, src: "/Basotho\\ Arts.png", text: "Sebabatso is empowering the next generation of leaders by connecting them to game-changing investment opportunities" },
+    { id: 1, src: "/PBV.png", text: "Bridging young entrepreneurs with their dream investors, this initiative, launched by Prime Minister Samuel Ntsokane Matekane, is fueling innovation across the globe" },
+    { id: 2, src: "/Nucleus.png", text: "Sebabatso is the catalyst young innovators need, transforming ambition into achievement with a powerful network of support." },
   ];
 
   const textColors = ["text-blue-500", "text-green-500", "text-red-500"]; // Different colors for each slide
