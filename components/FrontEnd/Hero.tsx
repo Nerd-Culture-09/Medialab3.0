@@ -1,11 +1,15 @@
 'use client'
 
+import Carousel from "./Carousel"
+import Featured from "./Featured"
 import { ModeToggle } from "./ModeToggle"
 
 export default function Hero() {
 
   return (
     <div className="">
+      <Carousel/>
+      <Featured/>
       <div className="relative isolate px-6 pt-14 lg:px-8">
         <div
           aria-hidden="true"
@@ -20,9 +24,6 @@ export default function Hero() {
           />
         </div>
         <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
-          <div className="flex flex-col gap-10 items-center p-6">
-            
-          </div>
           <div className="hidden sm:mb-8 sm:flex sm:justify-center">
           </div>
           <div className="text-center">

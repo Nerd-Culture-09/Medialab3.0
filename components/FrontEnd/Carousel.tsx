@@ -1,55 +1,138 @@
-"use client"
+"use client";
 
-import { useState } from 'react'
+import { useState, useEffect } from "react";
 
-export default function Navbar() {
-    const [state, setState] = useState(false)
+type Slide = {
+  id: number;
+  src: string;
+  text: string;
+};
 
-    return(
+export default function Carousel() {
+  const [activeIndex, setActiveIndex] = useState<number>(0);
+
+  const slides: Slide[] = [
+    { id: 0, src: "/next.svg", text: "Sebabatso is empowering the next generation of leaders by connecting them to game-changing investment opportunities" },
+    { id: 1, src: "/versel.svg", text: "Bridging young entrepreneurs with their dream investors, this initiative, launched by Prime Minister Samuel Ntsokane Matekane, is fueling innovation across the globe" },
+    { id: 2, src: "/nu.png", text: "Sebabatso is the catalyst young innovators need, transforming ambition into achievement with a powerful network of support." },
+  ];
+
+  const textColors = ["text-blue-500", "text-green-500", "text-red-500"]; // Different colors for each slide
+
+  const handlePrev = () => {
+    setActiveIndex((prevIndex) =>
+      prevIndex === 0 ? slides.length - 1 : prevIndex - 1
+    );
+  };
+
+  const handleNext = () => {
+    setActiveIndex((prevIndex) =>
+      prevIndex === slides.length - 1 ? 0 : prevIndex + 1
+    );
+  };
+
+  const goToSlide = (index: number) => {
+    setActiveIndex(index);
+  };
+
+  // Autoplay effect
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      handleNext();
+    }, 3000); // Change slide every 3 seconds
+
+    return () => clearInterval(intervalId); // Cleanup on unmount
+  }, [activeIndex]);
+
+  return (
     <div id="default-carousel" className="relative w-full" data-carousel="slide">
-        
-        <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
-            
-            <div className="hidden duration-700 ease-in-out" data-carousel-item>
-                <img src="/next.svg" className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."/>
-            </div>
-            
-            <div className="hidden duration-700 ease-in-out" data-carousel-item>
-                <img src="/verselsvg" className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."/>
-            </div>
-           
-            <div className="hidden duration-700 ease-in-out" data-carousel-item>
-                <img src="/nu.png" className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."/>
-            </div>
-            
-           
-        </div>
-        
-        <div className="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
-            <button type="button" className="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-            <button type="button" className="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-            <button type="button" className="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
-        </div>
-        
-        <button type="button" className="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-            <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                <svg className="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
-                </svg>
-                <span className="sr-only">Previous</span>
+      <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
+        {slides.map((slide, index) => (
+          <div
+            key={slide.id}
+            className={`duration-700 ease-in-out absolute w-full h-full transition-opacity flex items-center justify-center ${
+              index === activeIndex ? "opacity-100" : "opacity-0"
+            }`}
+            data-carousel-item
+            style={{
+              backgroundImage: `url(${slide.src})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
+          >
+            <span
+              className={`${textColors[index]} text-2xl font-family: __Inter_aaf875, __Inter_Fallback_aaf875`} 
+              style={{ textShadow: "2px 2px 4px rgba(0,0,0,0.5)" }} 
+            >
+              {slide.text}
             </span>
-        </button>
-        <button type="button" className="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-            <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                <svg className="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
-                </svg>
-                <span className="sr-only">Next</span>
-            </span>
-        </button>
-    </div>
-        
+          </div>
+        ))}
+      </div>
 
-     
-    )
+      <div className="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+        {slides.map((slide, index) => (
+          <button
+            key={slide.id}
+            type="button"
+            className={`w-3 h-3 rounded-full ${
+              index === activeIndex ? "bg-blue-500" : "bg-gray-300"
+            }`}
+            aria-current={index === activeIndex ? "true" : "false"}
+            aria-label={`Slide ${index + 1}`}
+            onClick={() => goToSlide(index)}
+          ></button>
+        ))}
+      </div>
+
+      <button
+        type="button"
+        className="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+        onClick={handlePrev}
+      >
+        <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+          <svg
+            className="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 6 10"
+          >
+            <path
+              stroke="currentColor"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M5 1 1 5l4 4"
+            />
+          </svg>
+          <span className="sr-only">Previous</span>
+        </span>
+      </button>
+      <button
+        type="button"
+        className="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+        onClick={handleNext}
+      >
+        <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+          <svg
+            className="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 6 10"
+          >
+            <path
+              stroke="currentColor"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="m1 9 4-4-4-4"
+            />
+          </svg>
+          <span className="sr-only">Next</span>
+        </span>
+      </button>
+    </div>
+  );
 }

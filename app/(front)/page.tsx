@@ -8,7 +8,6 @@ export default async function Home() {
   return (
     <section className="">
       <Navbar />
-      <Carousel/>
       <Hero /> {/* Rendering Hero component for homepage */}
       <Footer/>
      </section>
