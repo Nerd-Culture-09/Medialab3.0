@@ -67,7 +67,7 @@ const FaqsCard: React.FC<FaqsCardProps> = ({ faqsList }) => {
     );
 };
 
-export default function App() {
+export default function FAQ() {
     const faqsList: FaqItem[] = [
         {
             q: "What are some random questions to ask?",
