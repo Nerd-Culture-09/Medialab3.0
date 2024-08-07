@@ -9,10 +9,7 @@ export default function  Footer()  {
             href: 'javascript:void()',
             name: 'Home'
         },
-        {
-            href: 'javascript:void()',
-            name: 'Blog'
-        },
+        
         {
             href: 'javascript:void()',
             name: 'Opportunities'
