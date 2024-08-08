@@ -4,13 +4,12 @@ import Navbar from "@/components/FrontEnd/Navbar";
 import React from "react";
 
 
-export default async function Home() {
+export default async function Opportunities() {
   return (
-    <section className="">
+    <>
     
-      <Hero /> {/* Rendering Hero component for homepage */}
-      {/* <Contact_Support/> */}
+     
       
-     </section>
+     </>
   );
 } 
