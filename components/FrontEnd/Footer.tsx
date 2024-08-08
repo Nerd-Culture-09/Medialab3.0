@@ -27,7 +27,7 @@ export default function  Footer()  {
     const closeDialog = () => setIsDialogOpen(false);
 
     return (
-        <footer className="text-black-500 bg-white px-4 py-5 max-w-screen-xl mx-auto md:px-8">
+        <footer className="text-black-500 bg-white dark:bg-slate-950 px-4 py-5 max-w-screen-xl mx-auto md:px-8">
             <div className="max-w-lg sm:mx-auto sm:text-center">
                 <img src="/nu.png" className="w-20 h-20 sm:mx-auto" />
                 <p className="leading-relaxed mt-2 text-[15px]">
@@ -40,12 +40,7 @@ export default function  Footer()  {
             <div className="max-w-screen-xl mx-auto px-4 md:px-8">
                 <div className="flex flex-col md:flex-row items-center gap-2 max-w-lg sm:mx-auto sm:text-center">
                     <div className="flex-1 max-w-xl">
-                        <h3 className="text-3xl font-bold">
-                            Get in contact with us.
-                        </h3>
-
                     </div>
-                    
                 </div>
                 <div className="max-w-lg sm:mx-auto sm:text-center">
                 <button

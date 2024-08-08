@@ -1,116 +1,146 @@
-"use client";
+'use client'
 
-import { useRef, useState } from "react";
+import React, { useState } from "react";
 
-interface FaqItem {
-    q: string;
-    a: string;
-}
-
-interface FaqsCardProps {
-    faqsList: FaqItem;
-}
-
-const FaqsCard: React.FC<FaqsCardProps> = ({ faqsList }) => {
-    const answerElRef = useRef<HTMLDivElement>(null);
-    const [state, setState] = useState(false);
-    const [answerH, setAnswerH] = useState('0px');
-
-    const handleOpenAnswer = () => {
-        if (answerElRef.current) {
-            const answerElH = answerElRef.current.scrollHeight;
-            setState(!state);
-            setAnswerH(state ? '0px' : `${answerElH}px`);
-        }
-    };
-
-    return (
-        <div className="space-y-3 mt-5 overflow-hidden border-b">
-            <h4 className="pb-5 flex items-center justify-between text-lg text-gray-700 font-medium">
-                {faqsList.q}
-                {state ? (
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="h-5 w-5 text-gray-500 ml-2 cursor-pointer"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        onClick={handleOpenAnswer}
-                    >
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20 12H4" />
-                    </svg>
-                ) : (
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="h-5 w-5 text-gray-500 ml-2 cursor-pointer"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        onClick={handleOpenAnswer}
-                    >
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
-                    </svg>
-                )}
-            </h4>
-            <div
-                ref={answerElRef}
-                className="duration-300"
-                style={{ height: state ? answerH : '0px' }}
-            >
-                <div>
-                    <p className="text-gray-500">
-                        {faqsList.a}
-                    </p>
-                </div>
+const FAQ = () => {
+  return (
+    <section className="relative z-20 overflow-hidden pb-12 pt-20 dark:bg-dark lg:pb-[90px] lg:pt-[120px] ">
+      <div className="container mx-auto">
+        <div className="-mx-4 flex flex-wrap">
+          <div className="w-full px-4">
+            <div className="mx-auto mb-[60px] max-w-[520px] text-center lg:mb-20">
+              <span className="mb-2 block text-lg font-semibold text-gray-400">
+                FAQ
+              </span>
+              <h2 className="mb-4 text-3xl font-bold text-dark dark:text-gray-400 sm:text-[40px]/[48px]">
+                Any Questions? Look Here
+              </h2>
+              <p className="text-base text-body-color dark:text-dark-6">
+                There are many variations of passages of Lorem Ipsum available
+                but the majority have suffered alteration in some form.
+              </p>
             </div>
+          </div>
         </div>
-    );
+
+        <div className="-mx-4 flex flex-wrap">
+          <div className="w-full px-4 lg:w-1/2">
+            <AccordionItem
+              header="How long we deliver your first blog post?"
+              text="It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
+            />
+            <AccordionItem
+              header="How long we deliver your first blog post?"
+              text="It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
+            />
+            <AccordionItem
+              header="How long we deliver your first blog post?"
+              text="It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
+            />
+          </div>
+          <div className="w-full px-4 lg:w-1/2">
+            <AccordionItem
+              header="How long we deliver your first blog post?"
+              text="It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
+            />
+            <AccordionItem
+              header="How long we deliver your first blog post?"
+              text="It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
+            />
+            <AccordionItem
+              header="How long we deliver your first blog post?"
+              text="It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
+            />
+          </div>
+        </div>
+      </div>
+
+      <div className="absolute bottom-0 right-0 z-[-1]">
+        <svg
+          width="1440"
+          height="886"
+          viewBox="0 0 1440 886"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            opacity="0.5"
+            d="M193.307 -273.321L1480.87 1014.24L1121.85 1373.26C1121.85 1373.26 731.745 983.231 478.513 729.927C225.976 477.317 -165.714 85.6993 -165.714 85.6993L193.307 -273.321Z"
+            fill="url(#paint0_linear)"
+          />
+          <defs>
+            <linearGradient
+              id="paint0_linear"
+              x1="1308.65"
+              y1="1142.58"
+              x2="602.827"
+              y2="-418.681"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#3056D3" stop-opacity="0.36" />
+              <stop offset="1" stop-color="#F5F2FD" stop-opacity="0" />
+              <stop offset="1" stop-color="#F5F2FD" stop-opacity="0.096144" />
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+    </section>
+  );
 };
 
-export default function FAQ() {
-    const faqsList: FaqItem[] = [
-        {
-            q: "What are some random questions to ask?",
-            a: "That's exactly the reason we created this random question generator. There are hundreds of random questions to choose from so you're able to find the perfect random question."
-        },
-        {
-            q: "Do you include common questions?",
-            a: "This generator doesn't include most common questions. The thought is that you can come up with common questions on your own so most of the questions in this generator."
-        },
-        {
-            q: "Can I use this for 21 questions?",
-            a: "Yes! there are two ways that you can use this question generator depending on what you're after. You can indicate that you want 21 questions generated."
-        },
-        {
-            q: "Are these questions for girls or for boys?",
-            a: "The questions in this generator are gender neutral and can be used to ask either male of females (or any other gender the person identifies with)."
-        },
-        {
-            q: "What do you wish you had more talent doing?",
-            a: "If you've been searching for a way to get random questions, you've landed on the correct webpage. We created the Random Question Generator to ask you as many random questions as your heart desires."
-        }
-    ];
+export default FAQ;
+type AccordionItemProps = {
+    header: string;
+    text: string;
+  };
+  
+  const AccordionItem = ({ header, text }: AccordionItemProps) => {
+  const [active, setActive] = useState(false);
 
-    return (
-        <section className="leading-relaxed max-w-screen-xl mt-12 mx-auto px-4 md:px-8">
-            <div className="space-y-3 text-center">
-                <h1 className="text-3xl text-gray-800 font-semibold">
-                    Frequently Asked Questions
-                </h1>
-                <p className="text-gray-600 max-w-lg mx-auto text-lg">
-                    Answered all frequently asked questions, Still confused? feel free to contact us.
-                </p>
-            </div>
-            <div className="mt-14 max-w-2xl mx-auto">
-                {
-                    faqsList.map((item, idx) => (
-                        <FaqsCard
-                            key={idx}
-                            faqsList={item}
-                        />
-                    ))
-                }
-            </div>
-        </section>
-    );
-}
+  const handleToggle = (event: React.MouseEvent<HTMLButtonElement>) => {
+    event.preventDefault();
+    setActive(!active);
+  };
+  return (
+    <div className="mb-8 w-full rounded-lg bg-gray-300 dark:bg-slate-950 p-4 shadow-[0px_20px_95px_0px_rgba(201,203,204,0.30)] dark:bg-dark-2 dark:shadow-[0px_20px_95px_0px_rgba(0,0,0,0.30)] sm:p-8 lg:px-6 xl:px-8">
+<button
+  className={`faq-btn flex w-full text-left`}
+  onClick={(event) => handleToggle(event)}
+>
+        <div className="mr-5 flex h-10 w-full max-w-[40px] items-center justify-center rounded-lg bg-primary/5 text-primary dark:bg-white/5">
+          <svg
+            className={`fill-primary stroke-primary duration-200 ease-in-out ${
+              active ? "rotate-180" : ""
+            }`}
+            width="17"
+            height="10"
+            viewBox="0 0 17 10"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M7.28687 8.43257L7.28679 8.43265L7.29496 8.43985C7.62576 8.73124 8.02464 8.86001 8.41472 8.86001C8.83092 8.86001 9.22376 8.69083 9.53447 8.41713L9.53454 8.41721L9.54184 8.41052L15.7631 2.70784L15.7691 2.70231L15.7749 2.69659C16.0981 2.38028 16.1985 1.80579 15.7981 1.41393C15.4803 1.1028 14.9167 1.00854 14.5249 1.38489L8.41472 7.00806L2.29995 1.38063L2.29151 1.37286L2.28271 1.36548C1.93092 1.07036 1.38469 1.06804 1.03129 1.41393L1.01755 1.42738L1.00488 1.44184C0.69687 1.79355 0.695778 2.34549 1.0545 2.69659L1.05999 2.70196L1.06565 2.70717L7.28687 8.43257Z"
+              fill=""
+              stroke=""
+            />
+          </svg>
+        </div>
+
+        <div className="w-full">
+          <h4 className="mt-1 text-lg font-semibold text-dark dark:text-gray-400">
+            {header}
+          </h4>
+        </div>
+      </button>
+
+      <div
+        className={`pl-[62px] duration-200 ease-in-out ${
+          active ? "block" : "hidden"
+        }`}
+      >
+        <p className="py-3 text-base leading-relaxed text-body-color dark:text-dark-6">
+          {text}
+        </p>
+      </div>
+    </div>
+  );
+};
