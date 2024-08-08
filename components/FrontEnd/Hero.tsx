@@ -1,8 +1,8 @@
 'use client'
 
-import Carousel from "./Carousel"
+import { Blog } from "./Blog"
+import { Carousel } from "./Carousel"
 import Featured from "./Featured"
-import Blog from "./Blog"
 import { ModeToggle } from "./ModeToggle"
 
 export default function Hero() {
