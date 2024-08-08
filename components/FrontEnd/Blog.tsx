@@ -16,6 +16,7 @@ type Post = {
     role: string;
     href: string;
     imageUrl: string;
+    
   };
 };
 
@@ -171,7 +172,7 @@ export default function Blog() {
               </h3>
               <p className="mt-5 text-sm leading-6 text-gray-600">
                 <img
-                  alt=""
+                  alt="Author"
                   src={post.author.imageUrl}
                   className="h-10 w-10 rounded-full "
                 />
