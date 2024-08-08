@@ -9,7 +9,7 @@ export default async function Contact() {
   return (
     <>
     
-     <ContactInfo />
+     <ContactInfo />git 
       
      </>
   );
