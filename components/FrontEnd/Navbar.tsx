@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from 'react'
+import { ModeToggle } from './ModeToggle'
 
 export default function Navbar () {
 
@@ -59,7 +60,7 @@ export default function Navbar () {
                       }
                   </ul>
               </div>
-              
+              <ModeToggle />
           </div>
       </nav>
   )

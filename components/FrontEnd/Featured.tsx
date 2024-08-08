@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useState, useEffect } from "react";
 
 export default function Featured() {
@@ -28,6 +29,7 @@ export default function Featured() {
       ),
       title: "Global Summits",
       desc: "Connect with global leaders and innovators at our annual summits, designed to inspire and empower young entrepreneurs.",
+      href: "/"
     },
     {
       icon: (
@@ -53,6 +55,7 @@ export default function Featured() {
       ),
       title: "Innovative Cohorts",
       desc: "Join our dynamic cohorts to gain practical skills and insights, preparing you for the world of business and investment.",
+      href: "/"
     },
     {
       icon: (
@@ -73,6 +76,7 @@ export default function Featured() {
       ),
       title: "Mentorship Programs",
       desc: "Benefit from personalized mentorship programs that connect you with experienced professionals to guide your entrepreneurial journey.",
+      href: "/"
     },
     {
       icon: (
@@ -93,6 +97,7 @@ export default function Featured() {
       ),
       title: "Investment Opportunities",
       desc: "Unlock a world of investment opportunities and connect with investors who are ready to support innovative projects.",
+      href: "/"
     },
     {
       icon: (
@@ -113,6 +118,7 @@ export default function Featured() {
       ),
       title: "Networking Events",
       desc: "Expand your network and build valuable connections at our exclusive networking events with industry leaders.",
+      href: "/"
     },
     {
       icon: (
@@ -133,6 +139,7 @@ export default function Featured() {
       ),
       title: "Skill Development Workshops",
       desc: "Participate in our workshops designed to hone your skills and prepare you for the challenges of entrepreneurship.",
+      href: "/"
     },
   ];
 
@@ -160,6 +167,7 @@ export default function Featured() {
         <div className="relative mt-12">
           <ul className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {features.map((item, idx) => (
+              <Link href={item.href}>
               <li
                 key={idx}
                 className="bg-white space-y-3 p-4 border rounded-lg"
@@ -170,6 +178,7 @@ export default function Featured() {
                 </h4>
                 <p>{item.desc}</p>
               </li>
+              </Link>
             ))}
           </ul>
         </div>

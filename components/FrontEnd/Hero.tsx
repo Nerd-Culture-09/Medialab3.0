@@ -2,8 +2,11 @@
 
 import { Blog } from "./Blog"
 import { Carousel } from "./Carousel"
+import Carousel from "./Carousel"
+import FAQ from "./FAQ"
 import Featured from "./Featured"
 import { ModeToggle } from "./ModeToggle"
+import Partner from "./Partner"
 
 export default function Hero() {
 
@@ -12,8 +15,13 @@ export default function Hero() {
       <Carousel/>
       <Featured/>
       <Blog/>
-      
       <div className="relative isolate px-6 pt-14 lg:px-8">
+      <div className="px-72">
+      <Carousel />
+      </div>
+      <Featured />
+      <Partner />
+      <FAQ />
         <div
           aria-hidden="true"
           className=" absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
