@@ -1,5 +1,7 @@
 'use client'
 
+import { Blog } from "./Blog"
+import { Carousel } from "./Carousel"
 import Carousel from "./Carousel"
 import FAQ from "./FAQ"
 import Featured from "./Featured"
@@ -10,6 +12,9 @@ export default function Hero() {
 
   return (
     <div className="">
+      <Carousel/>
+      <Featured/>
+      <Blog/>
       <div className="relative isolate px-6 pt-14 lg:px-8">
       <div className="lg:px-72">
       <Carousel />
