@@ -7,10 +7,10 @@ import React from "react";
 export default async function Home() {
   return (
     <section className="">
-      <Navbar />
+      {/* <Navbar /> */}
       <Hero /> {/* Rendering Hero component for homepage */}
       {/* <Contact_Support/> */}
-      <Footer/>
+      {/* <Footer/> */}
      </section>
   );
 } 

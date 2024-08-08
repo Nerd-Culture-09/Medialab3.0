@@ -1,6 +1,7 @@
 "use client";
 
 import { Facebook, Github, Linkedin, Twitter } from "lucide-react";
+import Link from "next/link";
 
 export default function  Footer()  {
 
@@ -19,7 +20,7 @@ export default function  Footer()  {
             name: 'FAQ'
         },
         {
-            href: 'javascript:void()',
+            href: '/contactInfo',
             name: 'Contact Us'
         }
     ]
@@ -36,9 +37,9 @@ export default function  Footer()  {
                 {
                     footerNavs.map((item, idx) => (
                         <li className=" hover:text-gray-800">
-                            <a key={idx} href={item.href}>
-                                { item.name }
-                            </a>
+                            <Link key={idx} href={item.href}>
+                            {item.name}
+                            </Link>
                         </li>
                     ))
                 }
@@ -50,27 +51,27 @@ export default function  Footer()  {
                 <div className="mt-6 sm:mt-0">
                     <ul className="flex items-center space-x-4">
                         <li className="w-10 h-10 border rounded-full flex items-center justify-center">
-                            <a href="javascript:void()">
+                            <Link href="javascript:void()">
                                <Linkedin/>
-                            </a>
+                            </Link>
                         </li>
 
                         <li className="w-10 h-10 border rounded-full flex items-center justify-center">
-                            <a href="javascript:void()">
+                            <Link href="javascript:void()">
                                 <Facebook/>
-                            </a>
+                            </Link>
                         </li>
 
                         <li className="w-10 h-10 border rounded-full flex items-center justify-center">
-                            <a href="javascript:void()">
+                            <Link href="javascript:void()">
                                 <Twitter/>
-                            </a>
+                            </Link>
                         </li>
 
                         <li className="w-10 h-10 border rounded-full flex items-center justify-center">
-                            <a href="javascript:void()">
+                            <Link href="javascript:void()">
                             <Github />
-                            </a>
+                            </Link>
                         </li>
                     </ul>
                 </div>
