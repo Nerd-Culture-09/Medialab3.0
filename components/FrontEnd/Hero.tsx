@@ -17,9 +17,9 @@ export default function Hero() {
       <Carousel />
       </div>
       <Featured />
+      <Blog />
       <Partner />
       <FAQ />
-      <Blog />
         <div
           aria-hidden="true"
           className=" absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
