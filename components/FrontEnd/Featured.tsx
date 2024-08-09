@@ -167,7 +167,7 @@ export default function Featured() {
         <div className="relative mt-12">
           <ul className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {features.map((item, idx) => (
-              <Link href={item.href}>
+              <Link key={idx} href={item.href}>
               <li
                 key={idx}
                 className="bg-white dark:bg-slate-950 space-y-3 p-4 border dark:border-gray-500 rounded-lg"

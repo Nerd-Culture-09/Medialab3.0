@@ -8,17 +8,21 @@ export default function  Footer()  {
     const footerNavs = [
         {
             href: 'javascript:void()',
-            name: 'Home'
+            name: 'Policy'
         },
         
         {
             href: 'javascript:void()',
-            name: 'Opportunities'
+            name: 'Company'
         },
         {
             href: 'javascript:void()',
-            name: 'Contact Us'
-        }
+            name: 'License'
+        },
+        {
+            href: 'javascript:void()',
+            name: 'About Us'
+        },
     ]
 
     const [isDialogOpen, setIsDialogOpen] = useState(false);
@@ -31,7 +35,7 @@ export default function  Footer()  {
             <div className="max-w-lg sm:mx-auto sm:text-center">
                 <img src="/nu.png" className="w-20 h-20 sm:mx-auto" />
                 <p className="leading-relaxed mt-2 text-[15px]">
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    Lorem Ipsum has been the industry standard dummy text.
                 
                 </p>
            <br></br>
@@ -132,7 +136,7 @@ export default function  Footer()  {
             <ul className="items-center justify-center mt-8 space-y-5 sm:flex sm:space-x-4 sm:space-y-0">
                 {
                     footerNavs.map((item, idx) => (
-                        <li className=" hover:text-gray-800">
+                        <li key={idx} className=" hover:text-gray-800">
                             <a key={idx} href={item.href}>
                                 { item.name }
                             </a>

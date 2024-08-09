@@ -9,7 +9,7 @@ const FAQ = () => {
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-4">
             <div className="mx-auto mb-[60px] max-w-[520px] text-center lg:mb-20">
-              <span className="mb-2 block text-lg font-semibold text-gray-400">
+              <span className="mb-2 block text-lg font-bold text-gray-700 dark:text-gray-100">
                 FAQ
               </span>
               <h2 className="mb-4 text-3xl font-bold text-dark dark:text-gray-400 sm:text-[40px]/[48px]">
@@ -77,9 +77,9 @@ const FAQ = () => {
               y2="-418.681"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stop-color="#3056D3" stop-opacity="0.36" />
-              <stop offset="1" stop-color="#F5F2FD" stop-opacity="0" />
-              <stop offset="1" stop-color="#F5F2FD" stop-opacity="0.096144" />
+              <stop stop-color="#2E7D32" stop-opacity="0.08" />
+              <stop offset="1" stop-color="#3056D3" stop-opacity="0" />
+              <stop offset="1" stop-color="#3056D3" stop-opacity="0" />
             </linearGradient>
           </defs>
         </svg>

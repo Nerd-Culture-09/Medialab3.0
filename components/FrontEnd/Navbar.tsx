@@ -18,7 +18,7 @@ export default function Navbar () {
   return (
       <nav className="bg-white dark:bg-slate-950 dark:text-gray-300 w-full border-b md:border-0 md:static">
           <div className="items-center px-4 max-w-screen-xl mx-auto md:flex md:px-8">
-              <div className="flex items-center justify-between py-3 md:py-5 md:block">
+              <div className="flex items-center justify-between py-3 md:py-5 md:block" style={{zIndex: 9999}}>
                     <Link href="/">
                         <img
                             src="/nu.png" 
@@ -50,7 +50,7 @@ export default function Navbar () {
                       {
                           navigation.map((item, idx) => {
                               return (
-                                <li key={idx} className="text-gray-600 hover:text-indigo-600">
+                                <li key={idx} className="text-gray-600 hover:text-indigo-600" style={{zIndex: 9999}}>
                                     <Link href={item.path}>
                                         {item.title}
                                     </Link>
