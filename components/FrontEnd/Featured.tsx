@@ -144,14 +144,14 @@ export default function Featured() {
   ];
 
   return (
-    <section className="py-14">
+    <section className="py-52">
       <div className="max-w-screen-xl mx-auto px-4 text-gray-600 md:px-8">
         <div className="relative max-w-2xl mx-auto sm:text-center">
           <div className="relative z-10">
-            <h3 className="text-gray-800 text-3xl font-semibold sm:text-4xl">
+            <h3 className="text-gray-800 dark:text-slate-100 text-3xl font-semibold sm:text-4xl">
               Empowering Young Innovators
             </h3>
-            <p className="mt-3">
+            <p className="mt-3 dark:text-gray-400">
               Sebabatso is committed to nurturing the next generation of
               entrepreneurs through comprehensive programs and resources.
             </p>
@@ -167,16 +167,18 @@ export default function Featured() {
         <div className="relative mt-12">
           <ul className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {features.map((item, idx) => (
-              <Link href={item.href}>
+              <Link key={idx} href={item.href}>
               <li
                 key={idx}
-                className="bg-white space-y-3 p-4 border rounded-lg"
+                className="bg-white dark:bg-slate-950 space-y-3 p-4 border dark:border-gray-500 rounded-lg"
               >
                 <div className="text-indigo-600 pb-3">{item.icon}</div>
-                <h4 className="text-lg text-gray-800 font-semibold">
+                <h4 className="text-lg text-gray-800 dark:text-gray-50 font-semibold">
                   {item.title}
                 </h4>
+                <div className="dark:text-gray-400">
                 <p>{item.desc}</p>
+                </div>
               </li>
               </Link>
             ))}
