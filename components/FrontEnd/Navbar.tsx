@@ -12,12 +12,14 @@ export default function Navbar () {
   const navigation = [
     { title: "Home", path: "/" },
     { title: "Opportunities", path: "javascript:void(0)" },
-    { title: "Contact Us", path: "javascript:void(0)" },
+    { title: "Contact Us", path: "/contactInfo" },
+
   ]
 
   return (
       <nav className="bg-white dark:bg-slate-950 dark:text-gray-300 w-full border-b md:border-0 md:static">
           <div className="items-center px-4 max-w-screen-xl mx-auto md:flex md:px-8">
+
               <div className="flex items-center justify-between py-3 md:py-5 md:block" style={{zIndex: 9999}}>
                     <Link href="/">
                         <img
