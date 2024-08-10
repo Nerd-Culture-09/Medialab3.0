@@ -2,10 +2,8 @@
 
 import { Blog } from "./Blog"
 import { Carousel } from "./Carousel"
-
 import FAQ from "./FAQ"
 import Featured from "./Featured"
-import { ModeToggle } from "./ModeToggle"
 import Partner from "./Partner"
 
 export default function Hero() {
@@ -32,16 +30,6 @@ export default function Hero() {
             className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-50 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem] dark:bg-gradient-to-r dark:from-slate-500 dark:to-slate-300 dark:opacity-20 dark:sm:left-[calc(50%-30rem)] dark:sm:w-[72.1875rem]"
           />
         </div>
-        <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
-          <div className="hidden sm:mb-8 sm:flex sm:justify-center">
-          </div>
-          <div className="text-center">
-            {/* <p className="mt-6 text-lg leading-8 text-gray-600">
-              Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet
-              fugiat veniam occaecat fugiat aliqua.
-            </p> */}
-          </div>
-        </div>
         <div
           aria-hidden="true"
           className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
@@ -53,7 +41,6 @@ export default function Hero() {
             }}
             className="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-50 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem] dark:bg-gradient-to-r dark:from-slate-500 dark:to-slate-300 dark:opacity-30 dark:sm:left-[calc(50%-30rem)] dark:sm:w-[72.1875rem]"
           />
-          <ModeToggle />
         </div>
       </div>
     </div>

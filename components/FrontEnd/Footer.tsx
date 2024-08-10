@@ -10,17 +10,22 @@ export default function  Footer()  {
     const footerNavs = [
         {
             href: 'javascript:void()',
-            name: 'Home'
+            name: 'Policy'
         },
         
         {
             href: 'javascript:void()',
-            name: 'Opportunities'
+            name: 'Company'
         },
         {
             href: '/contactInfo',
             name: 'Contact Us'
-        }
+        },
+        {
+            href: 'javascript:void()',
+            name: 'About Us'
+        },
+
     ]
 
     const [isDialogOpen, setIsDialogOpen] = useState(false);
@@ -29,11 +34,11 @@ export default function  Footer()  {
     const closeDialog = () => setIsDialogOpen(false);
 
     return (
-        <footer className="text-black-500 bg-white px-4 py-5 max-w-screen-xl mx-auto md:px-8">
+        <footer className="text-black-500 bg-white dark:bg-slate-950 px-4 py-5 max-w-screen-xl mx-auto md:px-8">
             <div className="max-w-lg sm:mx-auto sm:text-center">
                 <img src="/nu.png" className="w-20 h-20 sm:mx-auto" />
                 <p className="leading-relaxed mt-2 text-[15px]">
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    Lorem Ipsum has been the industry standard dummy text.
                 
                 </p>
            <br></br>
@@ -47,7 +52,7 @@ export default function  Footer()  {
                         </h3>
 
                     </div>
-                    
+        </div>
                 </div>
                 <div className="max-w-lg sm:mx-auto sm:text-center">
                 <button
@@ -142,7 +147,11 @@ export default function  Footer()  {
                         <li className=" hover:text-gray-800">
                             <Link key={idx} href={item.href}>
                             {item.name}
-                            </Link>
+                        </Link>
+                        <li key={idx} className=" hover:text-gray-800">
+                            <a key={idx} href={item.href}>
+                                { item.name }
+                            </a>
                         </li>
                     ))
                 }

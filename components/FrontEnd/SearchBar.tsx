@@ -22,4 +22,3 @@ export default function SearchBar({ searchTerm, onSearchChange }: SearchBarProps
     </div>
   );
 }
-

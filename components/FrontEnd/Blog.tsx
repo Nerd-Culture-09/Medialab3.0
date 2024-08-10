@@ -1,8 +1,6 @@
 "use client";
 import React from "react";
-// import { calsans } from "@/fonts/calsans";
 import Image from "next/image";
-import { twMerge } from "tailwind-merge";
 import { TracingBeam } from "../ui/tracing-beam";
 
 export function Blog() {
@@ -11,7 +9,9 @@ export function Blog() {
       <div className="max-w-2xl mx-auto antialiased pt-4 relative">
         {dummyContent.map((item, index) => (
           <div key={`content-${index}`} className="mb-10">
-
+    <h2 className="dark:text-white text-slate-950 border border-gray-500 rounded-full text-sm w-fit px-4 py-1 mb-4">
+              {item.badge}
+            </h2>
             <p className= "text-xl mb-4">
               {item.title}
             </p>
