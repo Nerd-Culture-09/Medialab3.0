@@ -17,12 +17,13 @@ export default function  Footer()  {
         },
         {
             href: 'javascript:void()',
-            name: 'License'
+            name: 'Contact Us'
         },
         {
             href: 'javascript:void()',
             name: 'About Us'
         },
+
     ]
 
     const [isDialogOpen, setIsDialogOpen] = useState(false);
@@ -44,7 +45,12 @@ export default function  Footer()  {
             <div className="max-w-screen-xl mx-auto px-4 md:px-8">
                 <div className="flex flex-col md:flex-row items-center gap-2 max-w-lg sm:mx-auto sm:text-center">
                     <div className="flex-1 max-w-xl">
+                        <h3 className="text-3xl font-bold">
+                            Get in contact with us.
+                        </h3>
+
                     </div>
+        </div>
                 </div>
                 <div className="max-w-lg sm:mx-auto sm:text-center">
                 <button
