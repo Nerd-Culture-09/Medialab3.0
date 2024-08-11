@@ -132,7 +132,6 @@ const Filter: React.FC = () => {
         
       />
       <div className="flex justify-between items-center space-x-2 my-4">
-        <button className="text-white text-3xl">‹</button>
         <div className="flex flex-grow justify-center space-x-2">
         <div className="flex space-x-4 mb-6">
         <button
@@ -167,7 +166,6 @@ const Filter: React.FC = () => {
         </button>
       </div>
         </div>
-        <button className="text-white text-3xl">›</button>
       </div>
       <div className="flex flex-wrap">
         {filteredData.map((item, index) => (
