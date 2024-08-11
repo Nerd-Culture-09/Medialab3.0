@@ -11,7 +11,7 @@ export default function Navbar () {
   // Replace javascript:void(0) path with your path
   const navigation = [
     { title: "Home", path: "/" },
-    { title: "Opportunities", path: "javascript:void(0)" },
+    { title: "Opportunities", path: "/opportunities" },
     { title: "Contact Us", path: "/contactInfo" },
 
   ]
@@ -23,9 +23,9 @@ export default function Navbar () {
               <div className="flex items-center justify-between py-3 md:py-5 md:block" style={{zIndex: 9999}}>
                     <Link href="/">
                         <img
-                            src="/nu.png" 
-                            width={50} 
-                            height={50}
+                            src="/SE.png" 
+                            width={90} 
+                            height={90}
                             alt="Float UI logo"
                         />
                     </Link>
@@ -52,7 +52,7 @@ export default function Navbar () {
                       {
                           navigation.map((item, idx) => {
                               return (
-                                <li key={idx} className="text-gray-600 hover:text-indigo-600" style={{zIndex: 9999}}>
+                                <li key={idx} className="dark:text-gray-400 text-gray-800 hover:text-indigo-600" style={{zIndex: 9999}}>
                                     <Link href={item.path}>
                                         {item.title}
                                     </Link>

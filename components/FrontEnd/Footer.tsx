@@ -1,9 +1,7 @@
 "use client";
 
 import { Facebook, Github, Linkedin, Twitter } from "lucide-react";
-import Link from "next/link";
 import { useState } from "react";
-
 
 export default function  Footer()  {
 
@@ -18,14 +16,13 @@ export default function  Footer()  {
             name: 'Company'
         },
         {
-            href: '/contactInfo',
-            name: 'Contact Us'
+            href: 'javascript:void()',
+            name: 'License'
         },
         {
             href: 'javascript:void()',
             name: 'About Us'
         },
-
     ]
 
     const [isDialogOpen, setIsDialogOpen] = useState(false);
@@ -36,7 +33,7 @@ export default function  Footer()  {
     return (
         <footer className="text-black-500 bg-white dark:bg-slate-950 px-4 py-5 max-w-screen-xl mx-auto md:px-8">
             <div className="max-w-lg sm:mx-auto sm:text-center">
-                <img src="/nu.png" className="w-20 h-20 sm:mx-auto" />
+                <img src="/SE.png" className="w-20 h-20 sm:mx-auto" />
                 <p className="leading-relaxed mt-2 text-[15px]">
                     Lorem Ipsum has been the industry standard dummy text.
                 
@@ -47,12 +44,7 @@ export default function  Footer()  {
             <div className="max-w-screen-xl mx-auto px-4 md:px-8">
                 <div className="flex flex-col md:flex-row items-center gap-2 max-w-lg sm:mx-auto sm:text-center">
                     <div className="flex-1 max-w-xl">
-                        <h3 className="text-3xl font-bold">
-                            Get in contact with us.
-                        </h3>
-
                     </div>
-        </div>
                 </div>
                 <div className="max-w-lg sm:mx-auto sm:text-center">
                 <button
@@ -144,10 +136,6 @@ export default function  Footer()  {
             <ul className="items-center justify-center mt-8 space-y-5 sm:flex sm:space-x-4 sm:space-y-0">
                 {
                     footerNavs.map((item, idx) => (
-                        <li className=" hover:text-gray-800">
-                            <Link key={idx} href={item.href}>
-                            {item.name}
-                        </Link>
                         <li key={idx} className=" hover:text-gray-800">
                             <a key={idx} href={item.href}>
                                 { item.name }
@@ -163,27 +151,27 @@ export default function  Footer()  {
                 <div className="mt-6 sm:mt-0">
                     <ul className="flex items-center space-x-4">
                         <li className="w-10 h-10 border rounded-full flex items-center justify-center">
-                            <Link href="javascript:void()">
+                            <a href="javascript:void()">
                                <Linkedin/>
-                            </Link>
+                            </a>
                         </li>
 
                         <li className="w-10 h-10 border rounded-full flex items-center justify-center">
-                            <Link href="javascript:void()">
+                            <a href="javascript:void()">
                                 <Facebook/>
-                            </Link>
+                            </a>
                         </li>
 
                         <li className="w-10 h-10 border rounded-full flex items-center justify-center">
-                            <Link href="javascript:void()">
+                            <a href="javascript:void()">
                                 <Twitter/>
-                            </Link>
+                            </a>
                         </li>
 
                         <li className="w-10 h-10 border rounded-full flex items-center justify-center">
-                            <Link href="javascript:void()">
+                            <a href="javascript:void()">
                             <Github />
-                            </Link>
+                            </a>
                         </li>
                     </ul>
                 </div>
