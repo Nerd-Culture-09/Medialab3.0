@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useState, useEffect } from "react";
+import { Cover } from "../ui/cover";
 
 export default function Featured() {
   const features = [
@@ -148,8 +149,8 @@ export default function Featured() {
       <div className="max-w-screen-xl mx-auto px-4 text-gray-600 md:px-8">
         <div className="relative max-w-2xl mx-auto sm:text-center">
           <div className="relative z-10">
-            <h3 className="text-gray-800 dark:text-slate-100 text-3xl font-semibold sm:text-4xl">
-              Empowering Young Innovators
+            <h3 className="text-4xl md:text-4xl lg:text-6xl font-semibold max-w-7xl mx-auto text-center mt-6 relative z-20 py-6 bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-neutral-700 to-neutral-700 dark:from-neutral-800 dark:via-white dark:to-white">
+              <Cover>Empowering Young Innovators</Cover>
             </h3>
             <p className="mt-3 dark:text-gray-400">
               Sebabatso is committed to nurturing the next generation of
