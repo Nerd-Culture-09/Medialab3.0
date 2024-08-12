@@ -1,6 +1,8 @@
 'use client'
 
 import React, { useState } from "react";
+import { Button } from "../ui/button";
+import Link from "next/link";
 
 const FAQ = () => {
   return (
@@ -26,26 +28,46 @@ const FAQ = () => {
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-4 lg:w-1/2">
             <AccordionItem
-              header="How long we deliver your first blog post?"
-              text="It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
+              header="What Is Sebabatso?"
+              text= {
+                <>
+              Sebabatso is an initiative aimed at connecting young entrepreneurs 
+              and innovators to investment opportunities. It was launched by <strong>The 
+              Honourable Prime Minister Samuel Ntsokoane Matekane</strong> in 2023 with the
+              support of UN agencies to prepare youth entrepreneurs for investment 
+              opportunities.
+                </>
+              }
             />
             <AccordionItem
-              header="How long we deliver your first blog post?"
-              text="It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
-            />
-            <AccordionItem
-              header="How long we deliver your first blog post?"
-              text="It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
+              header="Where is Sebabatso located?"
+              text={
+                <>
+                Sebabatso is located physically at <strong>1010 Building Maseru 
+              (glass building) opposite Pitso Ground!</strong> Additionally, you can go to any 
+              of the youth centres in all of the ten districts of Lesotho for information 
+              about Sebabatsos or District Administrators (DA) Office.
+                </>
+              }
             />
           </div>
           <div className="w-full px-4 lg:w-1/2">
-            <AccordionItem
-              header="How long we deliver your first blog post?"
-              text="It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
-            />
-            <AccordionItem
-              header="How long we deliver your first blog post?"
-              text="It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
+             <AccordionItem
+              header="How do we contact Sebabatso?"
+              text={
+                <>
+                  Our email address is: SebabatsoLesotho@gmail.com.
+                  Follow our social media pages and send us a DM!
+                  Otherwise, click the following button to view more contact details{" "}
+                  <Link href="/contactInfo">
+                  <Button
+                    className="mt-3 rounded bg-primary text-white px-4 py-3"
+                  >
+                    Contact Us
+                  </Button>
+                  </Link>
+                </>
+              }
             />
             <AccordionItem
               header="How long we deliver your first blog post?"
@@ -91,7 +113,7 @@ const FAQ = () => {
 export default FAQ;
 type AccordionItemProps = {
     header: string;
-    text: string;
+    text: string | React.ReactNode;
   };
   
   const AccordionItem = ({ header, text }: AccordionItemProps) => {

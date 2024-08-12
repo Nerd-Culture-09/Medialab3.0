@@ -2,8 +2,6 @@
 
 import Image from "next/image";
 
-
-
 export default function Partner() {
   return (
     <div className="py-24">
@@ -32,7 +30,7 @@ export default function Partner() {
 
               {/* LOGO 4 */}
             <li>
-              <Image src="/UNDP.png" alt="UNDP"  width={190} height={190}/>
+              <Image src="/UN.png" alt="UNDP"  width={190} height={190}/>
             </li>
           </ul>
       </div>
