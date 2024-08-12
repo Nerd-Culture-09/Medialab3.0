@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import { useState, useEffect } from "react";
 import { Cover } from "../ui/cover";
 import { Briefcase, Clock, Globe, Link2, Network, User } from "lucide-react";
 
@@ -20,8 +19,8 @@ export default function Featured() {
       href: "/"
     },
     {
-      icon: <Briefcase />, 
-      itle: "Mentorship Programs",
+      icon: <Briefcase />,
+      title: "Mentorship Programs",
       desc: "Benefit from personalized mentorship programs that connect you with experienced professionals to guide your entrepreneurial journey.",
       href: "/"
     },
@@ -70,18 +69,18 @@ export default function Featured() {
           <ul className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {features.map((item, idx) => (
               <Link key={idx} href={item.href}>
-              <li
-                key={idx}
-                className="bg-white dark:bg-slate-950 space-y-3 p-4 border dark:border-gray-500 rounded-lg"
-              >
-                <div className="text-indigo-600 pb-3">{item.icon}</div>
-                <h4 className="text-lg text-gray-800 dark:text-gray-50 font-semibold">
-                  {item.title}
-                </h4>
-                <div className="dark:text-gray-400">
-                <p>{item.desc}</p>
-                </div>
-              </li>
+                <li
+                  key={idx}
+                  className="bg-white dark:bg-slate-950 space-y-3 p-4 border dark:border-gray-500 rounded-lg transition-colors duration-300 hover:bg-indigo-50 dark:hover:bg-slate-800"
+                >
+                  <div className="text-indigo-600 pb-3">{item.icon}</div>
+                  <h4 className="text-lg text-gray-800 dark:text-gray-50 font-semibold">
+                    {item.title}
+                  </h4>
+                  <div className="dark:text-gray-400">
+                    <p>{item.desc}</p>
+                  </div>
+                </li>
               </Link>
             ))}
           </ul>

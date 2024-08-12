@@ -4,7 +4,6 @@ import {
   motion,
   useTransform,
   useScroll,
-  useVelocity,
   useSpring,
 } from "framer-motion";
 import { cn } from "@/lib/utils";
@@ -114,6 +113,7 @@ export const TracingBeam = ({
               y1={y1} // set y1 for gradient
               y2={y2} // set y2 for gradient
             >
+              <stop stopColor="#18CCFC" stopOpacity="0"></stop>
               <stop stopColor="#18CCFC" stopOpacity="0"></stop>
               <stop stopColor="#2E7D32"></stop>
               <stop offset="0.325" stopColor="#6344F5"></stop>
