@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import { ModeToggle } from './ModeToggle'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Navbar () {
 
@@ -22,7 +23,7 @@ export default function Navbar () {
 
               <div className="flex items-center justify-between py-3 md:py-5 md:block" style={{zIndex: 9999}}>
                     <Link href="/">
-                        <img
+                        <Image
                             src="/SE.png" 
                             width={90} 
                             height={90}
