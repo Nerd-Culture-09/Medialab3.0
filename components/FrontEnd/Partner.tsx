@@ -20,17 +20,17 @@ export default function Partner() {
             </li>
               {/* LOGO 2 */}
             <li>
-              <Image src="/LG.png" alt="UNDP"  width={150} height={150}/>
+              <Image src="/LG.png" alt="THE GOVERNMENT OF LESOTHO"  width={150} height={150}/>
             </li>
 
               {/* LOGO 3 */}
             <li>
-              <Image src="/SE.png" alt="UNDP"  width={150} height={150}/>
+              <Image src="/SE.png" alt="SEBABATSO"  width={150} height={150}/>
             </li>
 
               {/* LOGO 4 */}
             <li>
-              <Image src="/UN.png" alt="UNDP"  width={190} height={190}/>
+              <Image src="/UN.png" alt="UN"  width={190} height={190}/>
             </li>
           </ul>
       </div>
