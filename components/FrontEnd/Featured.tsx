@@ -41,7 +41,7 @@ export default function Featured() {
       icon: <Clock />,
       title: "Skill Development Workshops",
       desc: "Participate in our workshops designed to hone your skills and prepare you for the challenges of entrepreneurship.",
-      href: "/cont"
+      href: "/"
     },
   ];
 

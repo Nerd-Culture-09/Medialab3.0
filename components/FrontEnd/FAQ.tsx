@@ -17,10 +17,6 @@ const FAQ = () => {
               <h2 className="mb-4 text-3xl font-bold text-dark dark:text-gray-400 sm:text-[40px]/[48px]">
                 Any Questions? Look Here
               </h2>
-              <p className="text-base text-body-color dark:text-dark-6">
-                There are many variations of passages of Lorem Ipsum available
-                but the majority have suffered alteration in some form.
-              </p>
             </div>
           </div>
         </div>
@@ -56,7 +52,6 @@ const FAQ = () => {
               header="How do we contact Sebabatso?"
               text={
                 <>
-                  Our email address is: SebabatsoLesotho@gmail.com.
                   Follow our social media pages and send us a DM!
                   Otherwise, click the following button to view more contact details{" "}
                   <Link href="/contactInfo">
