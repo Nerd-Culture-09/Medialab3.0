@@ -33,7 +33,7 @@ export default function  Footer()  {
     return (
         <footer className="text-black-500 bg-white dark:bg-slate-950 px-4 py-5 max-w-screen-xl mx-auto md:px-8">
             <div className="max-w-lg sm:mx-auto sm:text-center">
-                <img src="/SE.png" className="w-20 h-20 sm:mx-auto" />
+                <img src="/sebabatsologo.png" className="w-20 h-20 sm:mx-auto" />
                 <p className="leading-relaxed mt-2 text-[15px]">
                     Lorem Ipsum has been the industry standard dummy text.
                 

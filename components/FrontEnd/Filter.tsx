@@ -23,7 +23,6 @@ interface FilterData {
   title: string;
   description: string;
   imageUrl: string;
-  
   name: string;
   time: string;
 }
@@ -136,31 +135,31 @@ const Filter: React.FC = () => {
         <div className="flex space-x-4 mb-6">
         <button
           onClick={() => setFilterType("All")}
-          className="w-[4cm] h-[4cm] bg-white dark:bg-slate-900 text-blue-500 font-bold border border-blue-500 rounded-md shadow-lg flex items-center justify-center hover:bg-blue-50"
+          className="w-[3cm] h-[3cm] bg-white dark:bg-slate-900 text-blue-500 font-bold border border-blue-500 rounded-md shadow-lg flex items-center justify-center hover:bg-blue-50"
         >
           All
         </button>
         <button
           onClick={() => setFilterType("Summit")}
-          className="w-[4cm] h-[4cm] bg-white dark:bg-slate-900 text-blue-500 font-bold border border-blue-500 rounded-md shadow-lg flex items-center justify-center hover:bg-blue-50"
+          className="w-[3cm] h-[3cm] bg-white dark:bg-slate-900 text-blue-500 font-bold border border-blue-500 rounded-md shadow-lg flex items-center justify-center hover:bg-blue-50"
         >
           Summit
         </button>
         <button
           onClick={() => setFilterType("Cohort")}
-          className="w-[4cm] h-[4cm] bg-white dark:bg-slate-900 text-blue-500 font-bold border border-blue-500 rounded-md flex shadow-lg items-center justify-center hover:bg-blue-50"
+          className="w-[3cm] h-[3cm] bg-white dark:bg-slate-900 text-blue-500 font-bold border border-blue-500 rounded-md flex shadow-lg items-center justify-center hover:bg-blue-50"
         >
           Cohort
         </button>
         <button
           onClick={() => setFilterType("Conference")}
-          className="w-[4cm] h-[4cm] bg-white dark:bg-slate-900 text-blue-500 font-bold border border-blue-500 rounded-md flexshadow-lg items-center justify-center hover:bg-blue-50"
+          className="w-[3cm] h-[3cm] bg-white dark:bg-slate-900 text-blue-500 font-bold border border-blue-500 rounded-md flexshadow-lg items-center justify-center hover:bg-blue-50"
         >
           Conference
         </button>
         <button
           onClick={() => setFilterType("Jobs")}
-          className="w-[4cm] h-[4cm] bg-white dark:bg-slate-900 text-blue-500 font-bold border border-blue-500 rounded-md flex shadow-lg items-center justify-center hover:bg-blue-50"
+          className="w-[3cm] h-[3cm] bg-white dark:bg-slate-900 text-blue-500 font-bold border border-blue-500 rounded-md flex shadow-lg items-center justify-center hover:bg-blue-50"
         >
           Jobs
         </button>

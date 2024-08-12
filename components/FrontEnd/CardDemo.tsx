@@ -1,9 +1,8 @@
-// src/CardDemo.tsx
+
 "use client";
 
 import Image from "next/image";
 
-// Define props interface including all properties used
 interface CardDemoProps {
   type: string;
   imageUrl: string;
