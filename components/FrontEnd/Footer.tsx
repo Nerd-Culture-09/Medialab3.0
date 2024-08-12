@@ -1,6 +1,7 @@
 "use client";
 
-import { Facebook, Github, Linkedin, Twitter } from "lucide-react";
+import { Facebook, Twitter, Youtube } from "lucide-react";
+import Link from "next/link";
 import { useState } from "react";
 
 export default function  Footer()  {
@@ -146,43 +147,30 @@ export default function  Footer()  {
             </ul>
             <div className="mt-8 items-center justify-between sm:flex">
                 <div className="mt-4 sm:mt-0">
-                    &copy; 2024 Sebabatso rights reserved.
+                    &copy; {new Date().getFullYear()} Sebabatso rights reserved.
                 </div>
                 <div className="mt-6 sm:mt-0">
                     <ul className="flex items-center space-x-4">
                         <li className="w-10 h-10 border rounded-full flex items-center justify-center">
-                            <a href="javascript:void()">
-                               <Linkedin/>
-                            </a>
-                        </li>
-
-                        <li className="w-10 h-10 border rounded-full flex items-center justify-center">
-                            <a href="javascript:void()">
+                            <Link href="https://www.facebook.com/profile.php?id=61554715555087">
                                 <Facebook/>
-                            </a>
+                            </Link>
                         </li>
 
                         <li className="w-10 h-10 border rounded-full flex items-center justify-center">
-                            <a href="javascript:void()">
+                            <Link href="https://www.youtube.com/@Sebabatso_lesotho">
                                 <Twitter/>
-                            </a>
+                            </Link>
                         </li>
 
                         <li className="w-10 h-10 border rounded-full flex items-center justify-center">
-                            <a href="javascript:void()">
-                            <Github />
-                            </a>
+                            <Link href="https://www.youtube.com/@Sebabatso_lesotho">
+                            <Youtube />
+                            </Link>
                         </li>
                     </ul>
                 </div>
             </div>
-            <style jsx>{`
-                .svg-icon path,
-                .svg-icon polygon,
-                .svg-icon rect {
-                    fill: currentColor;
-                }
-            `}</style>
         </footer>
     )
 }
