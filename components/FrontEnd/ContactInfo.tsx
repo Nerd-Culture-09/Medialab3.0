@@ -13,7 +13,7 @@ import Image from "next/image";
                   <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
               </svg>
           ,
-          contact: "Mountain View, California, United State.",
+          contact: "Maseru, Lesotho, 100",
           title: "Our office"
       },
       {
@@ -31,7 +31,7 @@ import Image from "next/image";
                   <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
               </svg>
           ,
-          contact: "Support@example.com",
+          contact: "sebabatsolesotho@gmail.com",
           title: "Email"
       },
   ]
@@ -173,15 +173,14 @@ const content = [
     description:
       "See changes as they happen. With our platform, you can track every modification in real time. No more confusion about the latest version of your project. Say goodbye to the chaos of version control and embrace the simplicity of real-time updates.",
     content: (
-      <div className="h-443 w-445 flex items-center justify-center text-white">
+      <div className="h-full w-full flex items-center justify-center text-white">
   <Image
-    src="/Berea.jpg"
-    layout="intrinsic"
-    width={445}
-    height={443}
-    className="object-contain"
-    alt="QR code"
-  />
+          src="/Berea1.jpg"
+          width={300}
+          height={300}
+          className="h-full w-full object-cover"
+          alt="linear board demo"
+        />
 </div>
 
 
@@ -207,10 +206,10 @@ const content = [
 export function ContactInfo() {
   return (
     <div className="p-10">
-      <div className="max-w-screen-xl mx-auto px-4 text-gray-600 md:px-8">
+      <div className="max-w-screen-xl mx-auto px-4  dark:text-white-600 md:px-8">
               <div className="max-w-xl space-y-3">
                   
-                  <p className="text-gray-800 text-3xl font-semibold sm:text-4xl">
+                  <p className=" text-3xl dark:text-white-600 font-semibold sm:text-4xl">
                       Know where you can find us
                   </p>
                   <p>
@@ -222,7 +221,7 @@ export function ContactInfo() {
                       {
                           contactMethods.map((item, idx) => (
                               <li key={idx}>
-                                  <h4 className="text-gray-800 text-lg font-medium">{item.title}</h4>
+                                  <h4 className="dark:text-white-500 text-lg font-medium">{item.title}</h4>
                                   <div className="mt-3 flex items-center gap-x-3">
                                       <div className="flex-none text-gray-400">
                                           {item.icon}

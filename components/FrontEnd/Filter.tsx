@@ -146,19 +146,17 @@ const Filter: React.FC = () => {
   };
 
   return (
-    <div className="p-10">
+    <div className="p-4 sm:p-6 md:p-8">
       <Meteors number={20} />
       <SearchBar searchTerm={searchTerm} onSearchChange={setSearchTerm} />
-      <div className="flex justify-center gap-4">
+      <div className="flex justify-center gap-2 sm:gap-4 md:gap-6 flex-wrap">
         {categories.map(category => (
           <button
             key={category}
             onClick={() => toggleFilterType(category)}
-            className={`w-[3cm] h-[3cm] bg-white dark:bg-slate-900 text-blue-500 font-bold border border-blue-500 rounded-md shadow-lg flex items-center justify-center hover:bg-blue-50 ${
-              filterTypes.includes(category)
-                ? "bg-blue-500 text-white"
-                : "bg-white text-blue-500"
-            } hover:bg-blue-50 transition`}
+            className={`w-24 h-12 sm:w-32 sm:h-16 text-sm sm:text-base bg-white dark:bg-slate-900 text-blue-500 font-bold rounded-md shadow-2xl flex items-center justify-center hover:bg-blue-50 ${
+              filterTypes.includes(category) ? "bg-blue-100 dark:bg-blue-800 dark:text-white" : ""
+            } transition-all`}
           >
             {category}
           </button>
@@ -193,20 +191,18 @@ const Filter: React.FC = () => {
                   </button>
                 </span>
               )}
-            <div className="flex flex-col md:flex-row justify-between items-center">
-              <button
-                onClick={clearFilters}
-                className="flex items-center px-3 py-1 bg-red-500 bg-opacity-20 dark:bg-red-300 dark:bg-opacity-20 text-red-700 dark:text-red-500 rounded-full shadow-lg justify-center"
-              >
-                <span>Clear All</span>
-              </button>
-            </div>
+              <div className="flex flex-col md:flex-row justify-between items-center">
+                <button
+                  onClick={clearFilters}
+                  className="flex items-center px-3 py-1 bg-red-500 bg-opacity-20 dark:bg-red-300 dark:bg-opacity-20 text-red-700 dark:text-red-500 rounded-full shadow-lg justify-center"
+                >
+                  <span>Clear All</span>
+                </button>
+              </div>
             </div>
           </div>
         )}
-</div>
-
-
+      </div>
 
       <div className="flex flex-wrap items-center px-4 max-w-screen-xl mx-auto md:flex md:px-8">
         {filteredData.length > 0 ? (
