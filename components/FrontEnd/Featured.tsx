@@ -63,7 +63,8 @@ export default function Featured() {
               background:
                 "linear-gradient(152.92deg, rgba(192, 132, 252, 0.2) 4.54%, rgba(232, 121, 249, 0.26) 34.2%, rgba(192, 132, 252, 0.1) 77.55%)",
             }}
-          ></div>
+          >
+          </div>
         </div>
         <div className="relative mt-12">
           <ul className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
