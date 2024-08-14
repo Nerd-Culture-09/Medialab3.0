@@ -16,6 +16,7 @@ export default function Hero() {
       <Carousel />
       </div>
       <Featured />
+      <Cards />
       <Blog />
       <Partner />
       <FAQ />

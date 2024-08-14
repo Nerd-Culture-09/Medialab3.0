@@ -1,23 +1,38 @@
-import Image from 'next/image'
-import Link from 'next/link';
-import React from 'react'
+import { motion } from "framer-motion";
+import { LampContainer } from "../ui/lamp";
+import { HoverBorderGradient } from "../ui/hover-border-gradient";
+import { Button } from "../ui/moving-border";
+import Link from "next/link";
 
-export default function Cards() {
+export default function Cards (){
+
   return (
-    <div>
-    <Link href="#" className="flex justify-center items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-        <Image
-          className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
-          alt="sebabatso"
-          height={500}
-          width={500}
-          src={''}
-          />
-        <div className="flex flex-col justify-between p-4 leading-normal">
-            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
-            <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-        </div>
-    </Link>
-    </div>
-  );
+      <section className="py-14 ml-3">
+          <div className="max-w-screen-xl mx-auto px-4 text-gray-600 gap-x-12 items-start justify-between lg:flex md:px-8">
+              <div className="sm:hidden lg:block lg:max-w-xl">
+                  <img src="https://images.unsplash.com/photo-1622675363311-3e1904dc1885?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" className="rounded-lg" alt="" />
+              </div>
+              <div className="mt-6 gap-12 sm:mt-0 md:flex lg:block">
+                  <div className="max-w-2xl">
+                      <h3 className="dark:text-gray-200 text-gray-900 text-3xl font-semibold sm:text-4xl">
+                          What are you waiting for?
+                      </h3>
+                      <p className="mt-3 max-w-xl">
+                          Checkout what Sebabatso has for you!
+                      </p>
+                  </div>
+                  <div className="flex items-center justify-center py-28">
+                  <Link href="/opportunities">
+                  <Button
+                    borderRadius="1.75rem"
+                    className="bg-white dark:bg-slate-900 text-black dark:text-white border-gray-300 dark:border-slate-800"
+                  >
+                    Click Me!
+                  </Button>
+                  </Link>
+                  </div>
+              </div>
+          </div>
+      </section>
+  )
 }
