@@ -1,6 +1,7 @@
 'use client'
 
 import { Blog } from "./Blog"
+import Cards from "./Cards"
 import { Carousel } from "./Carousel"
 import FAQ from "./FAQ"
 import Featured from "./Featured"
@@ -11,7 +12,7 @@ export default function Hero() {
   return (
     <div className="">
       <div className="relative isolate px-6 pt-14 lg:px-8">
-      <div className="lg:px-72">
+      <div className="lg:px-72 py-10">
       <Carousel />
       </div>
       <Featured />

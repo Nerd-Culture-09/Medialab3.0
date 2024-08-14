@@ -5,7 +5,7 @@ import { TracingBeam } from "../ui/tracing-beam";
 
 export function Blog() {
   return (
-    <TracingBeam className="px-6">
+    <TracingBeam className="py-10">
       <div className="max-w-2xl mx-auto antialiased pt-4 relative">
         {dummyContent.map((item, index) => (
           <div key={`content-${index}`} className="mb-10">

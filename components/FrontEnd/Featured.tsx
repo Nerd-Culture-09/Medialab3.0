@@ -45,7 +45,7 @@ export default function Featured() {
   ];
 
   return (
-    <section className="py-52">
+    <section className="py-16">
       <div className="max-w-screen-xl mx-auto px-4 text-gray-600 md:px-8">
         <div className="relative max-w-2xl mx-auto sm:text-center">
           <div className="relative z-10">

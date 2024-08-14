@@ -9,7 +9,6 @@ export default function Navbar () {
 
   const [state, setState] = useState(false)
 
-  // Replace javascript:void(0) path with your path
   const navigation = [
     { title: "Home", path: "/" },
     { title: "Opportunities", path: "/opportunities" },
@@ -24,16 +23,16 @@ export default function Navbar () {
               <div className="flex items-center justify-between py-3 md:py-5 md:block" style={{zIndex: 9999}}>
                     <Link href="/">
                         <Image
-                            src="/SE.png" 
-                            width={90} 
-                            height={90}
+                            src="/sebabatsologo.png" 
+                            width={50} 
+                            height={50}
                             alt="Float UI logo"
                         />
                     </Link>
                   <div className="md:hidden">
                       <button className="text-gray-700 outline-none p-2 rounded-md focus:border-gray-400 focus:border"
-                          onClick={() => setState(!state)}
-                      >
+                          onClick={() => setState(!state)} style={{zIndex: 9999}}
+                        >
                           {
                               state ? (
                                   <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">

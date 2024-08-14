@@ -12,7 +12,7 @@ export function Carousel() {
     "S-Yellow.png",
   ];
   return (
-          <ImagesSlider className="h-[40rem]" images={images}>
+          <ImagesSlider className="h-[30rem]" images={images}>
         <motion.div
           initial={{
             
