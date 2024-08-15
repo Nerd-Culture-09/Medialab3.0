@@ -11,7 +11,7 @@ export default function Navbar () {
 
   const navigation = [
     { title: "Home", path: "/" },
-    { title: "Opportunities", path: "/opportunities" },
+    { title: "Services", path: "/services" },
     { title: "Contact Us", path: "/contactInfo" },
 
   ]
@@ -23,9 +23,9 @@ export default function Navbar () {
               <div className="flex items-center justify-between py-3 md:py-5 md:block" style={{zIndex: 9999}}>
                     <Link href="/">
                         <Image
-                            src="/sebabatsologo.png" 
-                            width={50} 
-                            height={50}
+                            src="/logo.png" 
+                            width={60} 
+                            height={60}
                             alt="Float UI logo"
                         />
                     </Link>
@@ -62,7 +62,7 @@ export default function Navbar () {
                       }
                   </ul>
               </div>
-              <ModeToggle />
+              
           </div>
       </nav>
   )

@@ -34,9 +34,9 @@ export default function  Footer()  {
     return (
         <footer className="text-black-500 bg-white dark:bg-slate-950 px-4 py-5 max-w-screen-xl mx-auto md:px-8">
             <div className="max-w-lg sm:mx-auto sm:text-center">
-                <img src="/sebabatsologo.png" className="w-20 h-20 sm:mx-auto" />
+                <img src="/logo.png" className="w-20 h-20 sm:mx-auto" />
                 <p className="leading-relaxed mt-2 text-[15px]">
-                    Lorem Ipsum has been the industry standard dummy text.
+                Multimedia Production Company.
                 
                 </p>
            <br></br>
@@ -50,7 +50,7 @@ export default function  Footer()  {
                 <div className="max-w-lg sm:mx-auto sm:text-center">
                 <button
                         onClick={openDialog}
-                        className="mt-2 md:mt-0 py-3 px-4 font-medium text-sm text-center text-white bg-indigo-600 hover:bg-indigo-500 active:bg-indigo-700 active:shadow-none rounded-lg shadow sm:w-auto"
+                        className="mt-2 md:mt-0 py-3 px-4 font-medium text-sm text-center text-white bg-indigo-900 hover:bg-indigo-00 active:bg-indigo-700 active:shadow-none rounded-lg shadow sm:w-auto"
                     >
                         Contact us 
                     </button>
@@ -148,24 +148,24 @@ export default function  Footer()  {
             </ul>
             <div className="mt-8 items-center justify-between sm:flex">
                 <div className="mt-4 sm:mt-0">
-                    &copy; {new Date().getFullYear()} Sebabatso rights reserved.
+                    &copy; {new Date().getFullYear()} Media Lab rights reserved.
                 </div>
                 <div className="mt-6 sm:mt-0">
                     <ul className="flex items-center space-x-4">
                         <li className="w-10 h-10 border rounded-full flex items-center justify-center">
-                            <Link href="https://www.facebook.com/profile.php?id=61554715555087">
+                            <Link href="https://www.facebook.com/profile.php?id=61554504191712">
                                 <Facebook/>
                             </Link>
                         </li>
 
                         <li className="w-10 h-10 border rounded-full flex items-center justify-center">
-                            <Link href="https://www.youtube.com/@Sebabatso_lesotho">
+                            <Link href="https://www.youtube.com/channel/UCSotHvqlgsBHo5XBQWCLrVg">
                                 <Twitter/>
                             </Link>
                         </li>
 
                         <li className="w-10 h-10 border rounded-full flex items-center justify-center">
-                            <Link href="https://www.youtube.com/@Sebabatso_lesotho">
+                            <Link href="https://www.youtube.com/@medialabnetwork">
                             <Youtube />
                             </Link>
                         </li>
