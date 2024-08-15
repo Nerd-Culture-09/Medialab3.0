@@ -1,46 +1,35 @@
 "use client";
 
 import Link from "next/link";
+import { Camera, Edit, Film, Video, Briefcase } from "lucide-react"; 
 import { Cover } from "../ui/cover";
-import { Briefcase, Clock, Globe, Link2, Network, User } from "lucide-react";
 
 export default function Featured() {
   const features = [
     {
-      icon: <Globe />,
-      title: "Global Summits",
-      desc: "Connect with global leaders and innovators at our annual summits, designed to inspire and empower young entrepreneurs.",
-      href: "/"
+      icon: <Camera className="w-8 h-8" />,
+      title: "Photography",
+      desc: "High-quality photography services to capture moments and create stunning visuals.",
     },
     {
-      icon: <User/>,
-      title: "Innovative Cohorts",
-      desc: "Join our dynamic cohorts to gain practical skills and insights, preparing you for the world of business and investment.",
-      href: "/"
+      icon: <Video className="w-8 h-8" />,
+      title: "Video Production",
+      desc: "Professional video production services to create compelling and engaging content.",
     },
     {
-      icon: <Briefcase />,
-      title: "Mentorship Programs",
-      desc: "Benefit from personalized mentorship programs that connect you with experienced professionals to guide your entrepreneurial journey.",
-      href: "/"
+      icon: <Edit className="w-8 h-8" />,
+      title: "Editing & Post-Production",
+      desc: "Expert editing and post-production services to polish your content to perfection.",
     },
     {
-      icon: <Link2 />,
-      title: "Investment Opportunities",
-      desc: "Unlock a world of investment opportunities and connect with investors who are ready to support innovative projects.",
-      href: "/"
+      icon: <Film className="w-8 h-8" />,
+      title: "Animation",
+      desc: "Dynamic animations to captivate your audience and enhance your brand message.",
     },
     {
-      icon: <Network />,
-      title: "Networking Events",
-      desc: "Expand your network and build valuable connections at our exclusive networking events with industry leaders.",
-      href: "/"
-    },
-    {
-      icon: <Clock />,
-      title: "Skill Development Workshops",
-      desc: "Participate in our workshops designed to hone your skills and prepare you for the challenges of entrepreneurship.",
-      href: "/"
+      icon: <Briefcase className="w-8 h-8" />,
+      title: "Studio Facilities & Equipment",
+      desc: "Our premium CPL facilities provide versatile workspaces to fit your production needs.",
     },
   ];
 
@@ -49,13 +38,18 @@ export default function Featured() {
       <div className="max-w-screen-xl mx-auto px-4 text-gray-600 md:px-8">
         <div className="relative max-w-2xl mx-auto sm:text-center">
           <div className="relative z-10">
-            <h3 className="text-4xl md:text-4xl lg:text-6xl font-semibold max-w-7xl mx-auto text-center mt-6 relative z-20 py-6 bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-neutral-700 to-neutral-700 dark:from-neutral-800 dark:via-white dark:to-white">
-              <Cover>Empowering Young Innovators</Cover>
-            </h3>
-            <p className="mt-3 dark:text-gray-400">
-              Sebabatso is committed to nurturing the next generation of
-              entrepreneurs through comprehensive programs and resources.
+          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 flex items-center">
+            <p className="mt-3 dark:text-gray-400 font-bold ">
+              Everything you need, from planning to post production, all under one roof.
             </p>
+          <img src="/videoeditor.jpg" alt="Descriptive Image Alt Text" className="rounded-lg shadow-md mb-4" />
+
+          </div>
+  
+            <h3 className="text-4xl md:text-4xl lg:text-6xl font-semibold max-w-7xl mx-auto text-center mt-6 relative z-20 py-6 bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-neutral-700 to-neutral-700 dark:from-neutral-800 dark:via-white dark:to-white">
+              <Cover>Our Services</Cover>
+            </h3>
+            
           </div>
           <div
             className="absolute inset-0 max-w-xs mx-auto h-44 blur-[118px]"
@@ -67,19 +61,18 @@ export default function Featured() {
           </div>
         </div>
         <div className="relative mt-12">
-          <ul className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-            {features.map((item, idx) => (
-              <Link key={idx} href={item.href}>
-                <li
-                  key={idx}
-                  className="bg-white dark:bg-slate-950 space-y-3 p-4 border dark:border-gray-500 rounded-lg transition-colors duration-300 hover:bg-indigo-50 dark:hover:bg-slate-800"
-                >
-                  <div className="text-indigo-600 pb-3">{item.icon}</div>
-                  <h4 className="text-lg text-gray-800 dark:text-gray-50 font-semibold">
-                    {item.title}
-                  </h4>
-                  <div className="dark:text-gray-400">
-                    <p>{item.desc}</p>
+          <ul className="space-y-8">
+          {features.map((item, idx) => (
+              <Link key={idx} href="#">
+                <li key={idx} className="flex items-center space-x-4">
+                  <div className="text-indigo-600 pb-2">{item.icon}</div>
+                  <div>
+                    <h4 className="text-lg text-gray-800 dark:text-gray-50 font-semibold">
+                      {item.title}
+                    </h4>
+                    <div className="dark:text-gray-400">
+                      <p>{item.desc}</p>
+                    </div>
                   </div>
                 </li>
               </Link>

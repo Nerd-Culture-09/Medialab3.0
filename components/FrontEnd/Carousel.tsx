@@ -1,34 +1,29 @@
 "use client";
-import { motion } from "framer-motion";
+
 import React from "react";
-import { ImagesSlider } from "../ui/images-slider";
 
 export function Carousel() {
-  const images = [
-    "S-Blue.png",
-    "S-Red.png",
-    "S-Brown.png",
-    "S-Green.png",
-    "S-Yellow.png",
-  ];
+  const imageUrl = "/videoeditor.jpg"; 
+
   return (
-          <ImagesSlider className="h-[30rem]" images={images}>
-        <motion.div
-          initial={{
-            
-            y: -80,
-          }}
-          animate={{
-            
-            y: 0,
-          }}
-          transition={{
-            duration: 0.6,
-          }}
-          className="z-50 flex flex-col justify-center items-center"
-        >
+    <div className="relative w-full h-[500px] overflow-hidden">
+      
+      <div 
+        className="absolute inset-0 bg-cover bg-center"
+        style={{ backgroundImage: `url(${imageUrl})` }}
+      >
+        
+        <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center p-4">
           
-        </motion.div>
-      </ImagesSlider>
-    );
+          <h2 className="text-white text-center text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-4">
+            Media Lab
+          </h2>
+          
+          <p className="text-white text-center text-base sm:text-lg md:text-xl lg:text-2xl">
+            Passionate about creating engaging and impactful multimedia experiences.
+          </p>
+        </div>
+      </div>
+    </div>
+  );
 }
