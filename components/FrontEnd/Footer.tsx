@@ -1,6 +1,7 @@
 "use client";
 
-import { Facebook, Twitter, Youtube } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
+import { Facebook, Youtube } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -159,8 +160,8 @@ export default function  Footer()  {
                         </li>
 
                         <li className="w-10 h-10 border rounded-full flex items-center justify-center">
-                            <Link href="https://www.youtube.com/channel/UCSotHvqlgsBHo5XBQWCLrVg">
-                                <Twitter/>
+                            <Link href="https://wa.me/26651910760">
+                            <FaWhatsapp />
                             </Link>
                         </li>
 
