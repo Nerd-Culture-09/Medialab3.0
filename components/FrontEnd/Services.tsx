@@ -37,7 +37,7 @@ export function Services() {
 }
 
 // Updated services array to include 'description' and 'link'
-export const services = [
+export const services = [ 
   {
     icon: <Camera className="flex items-center w-8 h-8 justify-center text-xl font-bold "/>,
     title: "Photography",

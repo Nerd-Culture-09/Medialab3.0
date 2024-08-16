@@ -6,73 +6,27 @@ import SearchBar from "./SearchBar";
 import { Meteors } from "../ui/meteors";
 import { X } from "lucide-react";
 
-
 interface CardData {
   type: string;
- 
   imageUrl: string;
- 
-  
 }
-
 
 interface FilterData {
   type: string;
-
   imageUrl: string;
-  
 }
 
 const data: FilterData[] = [
-  // Photography
-  {
-    type: "Photography",
-    imageUrl:
-      "/photography.jpg"},
-  {
-    type: "Photography",
-    imageUrl:
-      "/photography2.jpg"   },
-
-  // Post-Production
-  {
-    type: "Post-Production",
-    imageUrl:
-      "/postproduction.jpg" 
-  },
-  
-
-  // Animation
- 
-  {
-    type: "Animation",
-    imageUrl:
-      "/animation.jpg"
-  },
-
-  // Video Production
-  {
-    type: "Video Production",
-    imageUrl:
-      "/videoproduction.jpg",
-
-  },
-  {
-    type: "Video Production",
-    imageUrl:
-      "/videoproduction2.jpg",
-    
-  },
-  // Creative development
- 
-  {
-    type: "Creative development",
-    imageUrl:
-      "/creativedevelopment.jpg",
-    
-  },
-
+  { type: "Photography", imageUrl: "/photography.jpg" },
+  { type: "Photography", imageUrl: "/photography2.jpg" },
+  { type: "Post-Production", imageUrl: "/postproduction.jpg" },
+  { type: "Animation", imageUrl: "/animation.jpg" },
+  { type: "Animation", imageUrl: "/animated.mp4" },  // This is a video file
+  { type: "Video Production", imageUrl: "/videoproduction.jpg" },
+  { type: "Video Production", imageUrl: "/videoproduction2.jpg" },
+  { type: "Creative development", imageUrl: "/creativedevelopment.jpg" }
 ];
+
 const categories = ["Photography", "Post-Production", "Animation", "Video Production", "Creative development"];
 
 const Filter: React.FC = () => {
@@ -91,9 +45,8 @@ const Filter: React.FC = () => {
   // Filter data based on the selected filterTypes and searchTerm
   const filteredData = data.filter(item => {
     const matchesType = filterTypes.length === 0 || filterTypes.includes(item.type);
-    const matchesSearchTerm =
-      item.type.toLowerCase().includes(searchTerm.toLowerCase()) 
-      return matchesType && matchesSearchTerm;
+    const matchesSearchTerm = item.type.toLowerCase().includes(searchTerm.toLowerCase());
+    return matchesType && matchesSearchTerm;
   });
 
   // Clear all filters
@@ -119,6 +72,7 @@ const Filter: React.FC = () => {
           </button>
         ))}
       </div>
+
       <div className="my-4">
         {(filterTypes.length > 0 || searchTerm) && (
           <div className="mb-4">
@@ -168,7 +122,6 @@ const Filter: React.FC = () => {
               key={index}
               type={item.type}
               imageUrl={item.imageUrl}
-             
             />
           ))
         ) : (
