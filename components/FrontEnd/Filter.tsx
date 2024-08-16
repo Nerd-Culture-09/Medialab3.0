@@ -6,25 +6,21 @@ import SearchBar from "./SearchBar";
 import { Meteors } from "../ui/meteors";
 import { X } from "lucide-react";
 
-// Define types for card props
+
 interface CardData {
   type: string;
-  title: string;
-  description: string;
+ 
   imageUrl: string;
-  avatarUrl: string;
-  name: string;
-  time: string;
+ 
+  
 }
 
-// Define types for filter data
+
 interface FilterData {
   type: string;
-  title: string;
-  description: string;
+
   imageUrl: string;
-  name: string;
-  time: string;
+  
 }
 
 const data: FilterData[] = [
@@ -32,87 +28,48 @@ const data: FilterData[] = [
   {
     type: "Summit",
     imageUrl:
-      "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=3540&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    name: "Sophia Brown",
-    time: "4 min read",
-    title: "Tech Innovation Summit 2024",
-    description:
-      "An immersive summit focusing on the latest in tech innovation and emerging trends.",
-  },
+      "/photography.jpg"},
   {
     type: "Summit",
     imageUrl:
-      "https://images.unsplash.com/photo-1521747116042-5a810fda9664?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fGdlbmVyYWx8ZW58MHx8fDE2NTM5OTM5MTQ&ixlib=rb-1.2.1&q=80&w=1080",
-    name: "Emma Davis",
-    time: "3 min read",
-    title: "Global Business Summit 2024",
-    description: "Connect with top executives and explore global business strategies.",
-  },
+      "/photography.jpg"   },
 
   // Cohort
   {
     type: "Cohort",
     imageUrl:
-      "https://images.unsplash.com/photo-1544077960-604201fe74bc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1651&q=80",
-    name: "James Lee",
-    time: "4 min read",
-    title: "Growth Cohort for Entrepreneurs",
-    description:
-      "Join a growth cohort designed for entrepreneurs looking to scale their businesses effectively.",
+      "/photography.jpg" 
   },
   {
     type: "Cohort",
     imageUrl:
-      "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&q=80&w=3506&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    name: "Olivia Martinez",
-    time: "3 min read",
-    title: "Leadership Cohort for Managers",
-    description:
-      "Enhance your leadership skills through this intensive cohort for managers and team leaders.",
+      "/photography.jpg"
   },
 
   // Conference
   {
     type: "Conference",
     imageUrl:
-      "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=3540&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    name: "Mia Taylor",
-    time: "2 min read",
-    title: "Digital Marketing Conference 2024",
-    description:
-      "Explore the future of digital marketing with top industry experts at this year’s conference.",
+      "/photography.jpg" 
   },
   {
     type: "Conference",
     imageUrl:
-      "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&q=80&w=3506&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    name: "John Miller",
-    time: "5 min read",
-    title: "Future Tech Conference 2024",
-    description:
-      "Join us to learn about the latest advancements in technology and innovation.",
+      "/photography.jpg"
   },
 
   // Jobs
   {
     type: "Jobs",
     imageUrl:
-      "https://images.unsplash.com/photo-1521747116042-5a810fda9664?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fGdlbmVyYWx8ZW58MHx8fDE2NTM5OTM5MTQ&ixlib=rb-1.2.1&q=80&w=1080",
-    name: "Emily Davis",
-    time: "5 min read",
-    title: "Top Remote Jobs in Tech",
-    description:
-      "Discover top remote job opportunities in the tech industry with leading companies.",
+      "/photography.jpg",
+
   },
   {
     type: "Jobs",
     imageUrl:
-      "https://images.unsplash.com/photo-1521747116042-5a810fda9664?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fGdlbmVyYWx8ZW58MHx8fDE2NTM5OTM5MTQ&ixlib=rb-1.2.1&q=80&w=1080",
-    name: "Liam Wilson",
-    time: "6 min read",
-    title: "Exciting New Job Openings",
-    description:
-      "Check out the latest job openings in various fields and find the perfect role for you.",
+      "/photography.jpg",
+    
   },
 ];
 const categories = ["Summit", "Cohort", "Conference", "Jobs"];
@@ -134,9 +91,8 @@ const Filter: React.FC = () => {
   const filteredData = data.filter(item => {
     const matchesType = filterTypes.length === 0 || filterTypes.includes(item.type);
     const matchesSearchTerm =
-      item.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      item.description.toLowerCase().includes(searchTerm.toLowerCase());
-    return matchesType && matchesSearchTerm;
+      item.type.toLowerCase().includes(searchTerm.toLowerCase()) 
+      return matchesType && matchesSearchTerm;
   });
 
   // Clear all filters
@@ -210,11 +166,8 @@ const Filter: React.FC = () => {
             <CardDemo
               key={index}
               type={item.type}
-              title={item.title}
-              description={item.description}
               imageUrl={item.imageUrl}
-              name={item.name}
-              time={item.time}
+             
             />
           ))
         ) : (

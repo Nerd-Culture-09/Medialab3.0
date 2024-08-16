@@ -39,7 +39,7 @@ export default function Featured() {
         <div className="relative max-w-2xl mx-auto sm:text-center">
           <div className="relative z-10">
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 flex items-center">
-            <p className="mt-3 dark:text-gray-400 font-bold ">
+            <p className="mt-3 dark:text-gray-400 font-bold text-[25px]">
               Everything you need, from planning to post production, all under one roof.
             </p>
           <img src="/videoeditor.jpg" alt="Descriptive Image Alt Text" className="rounded-lg shadow-md mb-4" />
@@ -83,3 +83,5 @@ export default function Featured() {
     </section>
   );
 }
+
+
