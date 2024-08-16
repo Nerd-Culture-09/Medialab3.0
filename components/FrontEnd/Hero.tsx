@@ -4,9 +4,9 @@ import { Blog } from "./Blog"
 import Cards from "./Cards"
 import { Carousel } from "./Carousel"
 import FAQ from "./FAQ"
-import Featured from "./Featured"
 import Partner from "./Partner"
 import Projects from "./Projects"
+import { Services } from "./Services"
 
 export default function Hero() {
 
@@ -16,7 +16,7 @@ export default function Hero() {
       <div className="relative isolate px-6 pt-14 lg:px-8">
       <div className="lg:px-72 py-10">
       <Carousel /> 
-      <Featured />
+      <Services />
       <Cards />
       <Projects/>
       </div>

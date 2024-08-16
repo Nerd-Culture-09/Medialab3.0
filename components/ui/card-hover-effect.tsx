@@ -8,6 +8,7 @@ export const HoverEffect = ({
   className,
 }: {
   items: {
+    icon: React.ReactNode;
     title: string;
     description: string;
     link: string;
@@ -49,7 +50,8 @@ export const HoverEffect = ({
             )}
           </AnimatePresence>
           <Card>
-            <CardTitle>{item.title}</CardTitle>
+          
+            <CardTitle><span >{item.icon}</span>{item.title}</CardTitle>
             <CardDescription>{item.description}</CardDescription>
           </Card>
         </Link>
