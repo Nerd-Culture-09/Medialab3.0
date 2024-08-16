@@ -6,15 +6,19 @@ import { Carousel } from "./Carousel"
 import FAQ from "./FAQ"
 import Featured from "./Featured"
 import Partner from "./Partner"
+import Projects from "./Projects"
 
 export default function Hero() {
 
+  
   return (
     <div className="">
       <div className="relative isolate px-6 pt-14 lg:px-8">
       <div className="lg:px-72 py-10">
       <Carousel /> 
       <Featured />
+      <Cards />
+      <Projects/>
       </div>
       {/* <Cards />
       <Blog />

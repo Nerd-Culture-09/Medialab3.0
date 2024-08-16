@@ -12,10 +12,9 @@ export function Carousel() {
         className="bg-no-repeat bg-center bg-cover w-full h-full"
         style={{ backgroundImage: `url(${imageUrl})` }}
       >
-      
-        <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center p-4">          
-          
-        </div>
+        
+        
+        
       </div>
     </div>
   );
