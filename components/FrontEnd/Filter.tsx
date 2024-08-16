@@ -24,55 +24,56 @@ interface FilterData {
 }
 
 const data: FilterData[] = [
-  // Summit
+  // Photography
   {
-    type: "Summit",
+    type: "Photography",
     imageUrl:
       "/photography.jpg"},
   {
-    type: "Summit",
+    type: "Photography",
     imageUrl:
-      "/photography.jpg"   },
+      "/photography2.jpg"   },
 
-  // Cohort
+  // Post-Production
   {
-    type: "Cohort",
+    type: "Post-Production",
     imageUrl:
-      "/photography.jpg" 
+      "/postproduction.jpg" 
   },
-  {
-    type: "Cohort",
-    imageUrl:
-      "/photography.jpg"
-  },
+  
 
-  // Conference
+  // Animation
+ 
   {
-    type: "Conference",
+    type: "Animation",
     imageUrl:
-      "/photography.jpg" 
-  },
-  {
-    type: "Conference",
-    imageUrl:
-      "/photography.jpg"
+      "/animation.jpg"
   },
 
-  // Jobs
+  // Video Production
   {
-    type: "Jobs",
+    type: "Video Production",
     imageUrl:
-      "/photography.jpg",
+      "/videoproduction.jpg",
 
   },
   {
-    type: "Jobs",
+    type: "Video Production",
     imageUrl:
-      "/photography.jpg",
+      "/videoproduction2.jpg",
     
   },
+  // Creative development
+ 
+  {
+    type: "Creative development",
+    imageUrl:
+      "/creativedevelopment.jpg",
+    
+  },
+
 ];
-const categories = ["Summit", "Cohort", "Conference", "Jobs"];
+const categories = ["Photography", "Post-Production", "Animation", "Video Production", "Creative development"];
 
 const Filter: React.FC = () => {
   const [filterTypes, setFilterTypes] = useState<string[]>([]);
@@ -125,14 +126,14 @@ const Filter: React.FC = () => {
               {filterTypes.map((type) => (
                 <span
                   key={type}
-                  className="flex items-center px-3 py-1 bg-green-500 bg-opacity-20 dark:bg-green-300 dark:bg-opacity-20 text-green-700 dark:text-green-500 rounded-full shadow-lg justify-center"
+                  className="flex items-center px-3 py-1 bg-white-500 bg-opacity-20 dark:bg-white-300 dark:bg-opacity-20 text-blue-200 dark:text-blue-300 rounded-full shadow-lg justify-center"
                 >
                   {type}
                   <button
                     onClick={() => toggleFilterType(type)}
                     className="ml-2 text-sm"
                   >
-                    <X className="w-4 h-4 text-green-700 dark:text-green-500" />
+                    <X className="w-4 h-4 text-red-700 dark:text-red-500" />
                   </button>
                 </span>
               ))}
@@ -150,7 +151,7 @@ const Filter: React.FC = () => {
               <div className="flex flex-col md:flex-row justify-between items-center">
                 <button
                   onClick={clearFilters}
-                  className="flex items-center px-3 py-1 bg-red-500 bg-opacity-20 dark:bg-red-300 dark:bg-opacity-20 text-red-700 dark:text-red-500 rounded-full shadow-lg justify-center"
+                  className="flex items-center px-3 py-1 bg-red-500 bg-opacity-20 dark:bg-gray-300 dark:bg-opacity-20 text-white-200 dark:text-white-300 rounded-full shadow-lg justify-center"
                 >
                   <span>Clear All</span>
                 </button>
