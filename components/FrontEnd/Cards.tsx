@@ -7,7 +7,7 @@ export default function Cards() {
     type: string;
     imageUrl: string;
   }
-
+  
   const data: CardData[] = [
     {
       type: "Photography",
@@ -43,7 +43,7 @@ export default function Cards() {
 
   return (
     <section className="py-14 ml-3">
-      <div className="max-w-screen-xl mx-auto px-4">
+      <div className="max-w-screen-xl mx-auto px-4 ">
         <div className="bg-white dark:bg-slate-900 p-8 text-gray-600 dark:text-gray-300 gap-x-12 lg:flex md:px-8 relative">
           <div className="lg:max-w-xl flex-shrink-0">
             <div className="mt-6 gap-12 sm:mt-0 md:flex lg:block">

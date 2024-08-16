@@ -6,6 +6,7 @@ import { Carousel } from "./Carousel"
 import FAQ from "./FAQ"
 import Featured from "./Featured"
 import Partner from "./Partner"
+import Projects from "./Projects"
 
 export default function Hero() {
 
@@ -17,6 +18,7 @@ export default function Hero() {
       {/* <Carousel /> */}
       <Featured />
       <Cards />
+      <Projects/>
       </div>
       {/* <Cards />
       <Blog />
