@@ -11,7 +11,7 @@ export default function Navbar () {
 
   const navigation = [
     { title: "Home", path: "/" },
-    { title: "Services", path: "/opportunities" },
+    { title: "Services", path: "/services" },
     { title: "Contact Us", path: "/contactInfo" },
 
   ]
