@@ -21,7 +21,7 @@ const data: FilterData[] = [
   { type: "Photography", imageUrl: "/photography2.jpg" },
   { type: "Post-Production", imageUrl: "/postproduction.jpg" },
   { type: "Animation", imageUrl: "/animation.jpg" },
-  { type: "Animation", imageUrl: "/animated.mp4" },  // This is a video file
+  { type: "Animation", imageUrl: "/animated.mp4" },  
   { type: "Video Production", imageUrl: "/videoproduction.jpg" },
   { type: "Video Production", imageUrl: "/videoproduction2.jpg" },
   { type: "Creative development", imageUrl: "/creativedevelopment.jpg" }
