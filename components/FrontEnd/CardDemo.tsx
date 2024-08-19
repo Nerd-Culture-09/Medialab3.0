@@ -19,8 +19,7 @@ export function CardDemo({ type, imageUrl }: CardDemoProps) {
         {isVideo ? (
           <video
             className="w-full h-full object-cover rounded-md"
-            controls
-            src={imageUrl}
+            src={imageUrl} autoPlay loop muted
           >
             Your browser does not support the video tag.
           </video>

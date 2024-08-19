@@ -19,11 +19,11 @@ export const HoverEffect = ({
 
   return (
     <div
-      className={cn(
-        "grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3  py-10",
-        className
-      )}
-    >
+  className={cn(
+    "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 py-10 auto-rows-[1fr]", // Ensures equal heights across rows
+    className
+  )}
+>
       {items.map((item, idx) => (
         <Link
           href={item?.link}
@@ -50,8 +50,8 @@ export const HoverEffect = ({
             )}
           </AnimatePresence>
           <Card>
-          
-            <CardTitle><span >{item.icon}</span>{item.title}</CardTitle>
+            <CardIcon>{item.icon}</CardIcon>
+            <CardTitle>{item.title}</CardTitle>
             <CardDescription>{item.description}</CardDescription>
           </Card>
         </Link>
@@ -70,7 +70,8 @@ export const Card = ({
   return (
     <div
       className={cn(
-        "rounded-2xl h-full w-full p-4 overflow-hidden bg-black border border-transparent dark:border-white/[0.2] group-hover:border-slate-700 relative z-20",
+        "rounded-2xl h-full w-full p-4 overflow-hidden bg-black border border-transparent dark:border-white/[0.2] group-hover:border-slate-700 relative z-20 ",
+       
         className
       )}
     >
@@ -111,3 +112,9 @@ export const CardDescription = ({
     </p>
   );
 };
+export const CardIcon = ({ children }: { children: React.ReactNode }) => {
+  return (
+    <div className="flex items-center justify-center w-16 h-16 text-white mb-4">
+      {children}
+    </div>
+  )};
