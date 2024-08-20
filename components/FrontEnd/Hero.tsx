@@ -7,6 +7,7 @@ import FAQ from "./FAQ"
 import Partner from "./Partner"
 import Projects from "./Projects"
 import { Services } from "./Services"
+import CallToAction from "./CallToAction"
 
 export default function Hero() {
 
@@ -16,6 +17,7 @@ export default function Hero() {
       <div className="relative isolate px-6 pt-14 lg:px-8">
       <div className="lg:px-72 py-10">
       <Carousel /> 
+      <CallToAction/>
       <Services />
       <Cards />
       <Projects/>
