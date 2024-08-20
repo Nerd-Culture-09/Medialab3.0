@@ -9,10 +9,10 @@ export default function Cards() {
   }
 
   const data: CardData[] = [
-    { type: "Photography", imageUrl: "/photography.jpg" },
-    { type: "Animation", imageUrl: "/photography.jpg" },
-    { type: "Post Production", imageUrl: "/photography.jpg" },
-    { type: "Video production", imageUrl: "/photography.jpg" },
+    { type: "Photography", imageUrl: "/creativedevelopment.jpg" },
+    { type: "Photography", imageUrl: "/photography2.jpg" },
+    { type: "Post Production", imageUrl: "/postproduction.jpg" },
+    { type: "Video production", imageUrl: "/videoproduction.jpg" },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
