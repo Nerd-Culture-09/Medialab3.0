@@ -1,7 +1,6 @@
-"use client"
+"use client";
 
 import { useState } from 'react'
-import { ModeToggle } from './ModeToggle'
 import Link from 'next/link'
 import Image from 'next/image'
 
@@ -29,8 +28,8 @@ export default function Navbar () {
                             alt="Float UI logo"
                         />
                     </Link>
-                  <div className="md:hidden">
-                      <button className="text-gray-700 outline-none p-2 rounded-md focus:border-gray-400 focus:border"
+                    <div className="md:hidden" style={{zIndex: 9999}}>
+                      <button className="text-white-700 outline-none p-2 rounded-md focus:border-gray-400 focus:border"
                           onClick={() => setState(!state)} style={{zIndex: 9999}}
                         >
                           {
@@ -40,7 +39,7 @@ export default function Navbar () {
                                   </svg>
                               ) : (
                                   <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 8h16M4 16h16" />
+                                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 8h16M4 16h16" style={{zIndex: 9999}} />
                                   </svg>
                               )
                           }
@@ -62,7 +61,6 @@ export default function Navbar () {
                       }
                   </ul>
               </div>
-              
           </div>
       </nav>
   )
