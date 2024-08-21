@@ -8,6 +8,7 @@ import Partner from "./Partner"
 import Projects from "./Projects"
 import { Services } from "./Services"
 import CallToAction from "./CallToAction"
+import {Photography} from "./Photography"
 
 export default function Hero() {
 
@@ -19,7 +20,8 @@ export default function Hero() {
       <Carousel /> 
       
       <CallToAction/>
-      <Services />
+      {/* <Services/> */}
+      <Photography />
       <Cards />
       <Projects/>
       </div>
