@@ -156,11 +156,6 @@ export function Photography() {
 }
 
 
-
-
-
-
-
 export const CloseIcon = () => {
   return (
     <motion.svg
@@ -199,7 +194,7 @@ const cards = [
     icon: <Camera className="flex items-center w-8 h-8 justify-center text-xl font-bold "/>,
     title: "Photography",
     description: "High-quality photography services to capture moments and create stunning visuals.",
-    src: "/photography.jpg",
+    src: "/photography2.jpg",
     ctaText: "Let's Chat",
     ctaLink: "https://wa.me/26651910760",
     content: () => {
@@ -232,7 +227,7 @@ const cards = [
     icon: <Video className="w-8 h-8" />,
     title: "Video Production",
     description: "Professional video production services to create compelling and engaging content.",
-    src: "/videoproduction2.jpg",
+    src: "/videographer.png",
     ctaText: "Let's Chat",
     ctaLink: "https://wa.me/26651910760",
     content: () => {
@@ -287,8 +282,8 @@ const cards = [
   },
   {
     icon: <Edit className="w-8 h-8" />,
-    title: "Postproduction",
-    description: "Expert postproduction services to refine and enhance your audio, video, and images.",
+    title: "Post-Production",
+    description: "Expert post-production services to refine and enhance your audio, video, and images.",
     src: "/camera.jpg",
     ctaText: "Let's Chat",
     ctaLink: "https://wa.me/26651910760",

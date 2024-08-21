@@ -17,8 +17,9 @@ interface FilterData {
 }
 
 const data: FilterData[] = [
-  { type: "Photography", imageUrl: "/photography.jpg" },
-  { type: "Photography", imageUrl: "/photography2.jpg" },
+  { type: "Photography", imageUrl: "/pink2.jpg" },
+  { type: "Photography", imageUrl: "/row2.png" },
+  { type: "Photography", imageUrl: "/wave10.png" },
   { type: "Post-Production", imageUrl: "/postproduction.jpg" },
   { type: "Animation", imageUrl: "/animation.jpg" },
   { type: "Animation", imageUrl: "/animated.mp4" },  
