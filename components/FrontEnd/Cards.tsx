@@ -6,13 +6,14 @@ export default function Cards() {
   interface CardData {
     type: string;
     imageUrl: string;
+    isVideo: boolean;
   }
 
   const data: CardData[] = [
-    { type: "Photography", imageUrl: "/creativedevelopment.jpg" },
-    { type: "Photography", imageUrl: "/photography2.jpg" },
-    { type: "Post Production", imageUrl: "/postproduction.jpg" },
-    { type: "Video production", imageUrl: "/videoproduction.jpg" },
+    { type: "Photography", imageUrl: "/creativedevelopment.jpg", isVideo: false },
+    { type: "Animation", imageUrl: "/animated.mp4", isVideo: true },
+    { type: "Post Production", imageUrl: "/postproduction.jpg", isVideo: false },
+    { type: "Video production", imageUrl: "/videoproduction.jpg", isVideo: false },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -83,6 +84,7 @@ export default function Cards() {
                   <CardDemo
                     type={item.type}
                     imageUrl={item.imageUrl}
+                    
                   />
                 </div>
               ))}

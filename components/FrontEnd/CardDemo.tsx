@@ -17,12 +17,18 @@ export function CardDemo({ type, imageUrl }: CardDemoProps) {
         className="cursor-pointer overflow-hidden relative card h-80 w-80 rounded-md shadow-xl max-w-sm mx-auto flex flex-col justify-between p-4"
       >
         {isVideo ? (
+          <div className="relative w-full h-full">
           <video
-            className="w-full h-full object-cover rounded-md"
-            src={imageUrl} autoPlay loop muted
+            className="absolute top-0 left-0 w-full h-full object-contain"
+            src={imageUrl}
+            autoPlay
+            loop
+            muted
+            playsInline
           >
             Your browser does not support the video tag.
           </video>
+        </div>
         ) : (
           <div
             className="w-full h-full bg-cover bg-center rounded-md"
@@ -32,10 +38,10 @@ export function CardDemo({ type, imageUrl }: CardDemoProps) {
           />
         )}
 
-        {/* Overlay effect */}
+        
         <div className="absolute w-full h-full top-0 left-0 transition duration-300 group-hover/card:bg-black opacity-60"></div>
 
-        {/* Content over the media */}
+        
         <div className="flex flex-row items-center space-x-4 z-10">
           <h3 className="text-white font-bold">{type}</h3>
         </div>

@@ -24,10 +24,10 @@ const data: FilterData[] = [
   { type: "Animation", imageUrl: "/animated.mp4" },  
   { type: "Video Production", imageUrl: "/videoproduction.jpg" },
   { type: "Video Production", imageUrl: "/videoproduction2.jpg" },
-  { type: "Creative development", imageUrl: "/creativedevelopment.jpg" }
+  { type: "Creative Development", imageUrl: "/creativedevelopment.jpg" }
 ];
 
-const categories = ["Photography", "Post-Production", "Animation", "Video Production", "Creative development"];
+const categories = ["Photography", "Post-Production", "Animation", "Video Production", "Creative Development"];
 
 const Filter: React.FC = () => {
   const [filterTypes, setFilterTypes] = useState<string[]>([]);
