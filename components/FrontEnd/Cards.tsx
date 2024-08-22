@@ -11,7 +11,6 @@ export default function Cards() {
 
   const data: CardData[] = [
     { type: "Photography", imageUrl: "/creativedevelopment.jpg", isVideo: false },
-    { type: "Animation", imageUrl: "/animated.mp4", isVideo: true },
     { type: "Post Production", imageUrl: "/postproduction.jpg", isVideo: false },
     { type: "Video production", imageUrl: "/videoproduction.jpg", isVideo: false },
     { type: "Photography", imageUrl: "/morephotography.jpg", isVideo: false },
