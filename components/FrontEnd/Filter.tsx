@@ -19,13 +19,7 @@ interface FilterData {
 const data: FilterData[] = [
   { type: "Photography", imageUrl: "/pink2.jpg" },
   { type: "Photography", imageUrl: "/row2.png" },
-  { type: "Photography", imageUrl: "/wave10.png" },
-  { type: "Post-Production", imageUrl: "/postproduction.jpg" },
-  { type: "Animation", imageUrl: "/animation.jpg" },
-  { type: "Animation", imageUrl: "/animated.mp4" },  
-  { type: "Video Production", imageUrl: "/videoproduction.jpg" },
-  { type: "Video Production", imageUrl: "/videoproduction2.jpg" },
-  { type: "Creative Development", imageUrl: "/creativedevelopment.jpg" }
+  { type: "Photography", imageUrl: "/wave10.png" }
 ];
 
 const categories = ["Photography", "Post-Production", "Animation", "Video Production", "Creative Development"];

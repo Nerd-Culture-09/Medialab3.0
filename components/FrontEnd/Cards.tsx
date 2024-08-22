@@ -14,6 +14,8 @@ export default function Cards() {
     { type: "Animation", imageUrl: "/animated.mp4", isVideo: true },
     { type: "Post Production", imageUrl: "/postproduction.jpg", isVideo: false },
     { type: "Video production", imageUrl: "/videoproduction.jpg", isVideo: false },
+    { type: "Photography", imageUrl: "/morephotography.jpg", isVideo: false },
+    
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -34,8 +36,9 @@ export default function Cards() {
   // Scroll to the current card
   const scrollToCurrent = () => {
     if (scrollRef.current) {
+      const cardWidth = scrollRef.current.offsetWidth;
       scrollRef.current.scrollTo({
-        left: scrollRef.current.offsetWidth * currentIndex,
+        left: (cardWidth + 24) * currentIndex,
         behavior: 'smooth',
       });
     }
@@ -65,7 +68,7 @@ export default function Cards() {
 
           <div className="relative flex flex-grow overflow-x-hidden items-center">
             <button
-              className="absolute left-0 top-1/2 transform -translate-y-1/2 p-2 bg-white dark:bg-slate-800 rounded-full shadow-lg z-10"
+              className="absolute left-2 top-1/2 transform -translate-y-1/2 p-2 bg-white dark:bg-slate-800 rounded-full shadow-lg z-10"
               onClick={handlePrevious}
             >
               <ArrowLeft className="w-6 h-6 text-gray-600 dark:text-gray-300" />

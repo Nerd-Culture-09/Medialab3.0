@@ -89,7 +89,7 @@ export function Photography() {
                     </motion.h3>
                     <motion.p
                       layoutId={`description-${active.description}-${id}`}
-                      className="text-white text-base"
+                      className="text-gray-400 text-base"
                     >
                       {active.description}
                     </motion.p>
@@ -113,7 +113,7 @@ export function Photography() {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
-                    className="text-white text-xs md:text-sm lg:text-base h-full pb-10 flex flex-col items-start gap-4 overflow-auto"
+                    className="text-gray-400 text-xs md:text-sm lg:text-base h-full pb-10 flex flex-col items-start gap-4 overflow-auto"
                   >
                     {typeof active.content === "function"
                       ? active.content()
@@ -200,7 +200,6 @@ const cards = [
     content: () => {
       return (
         <div>
-          <h4 className="font-semibold">Photography Types:</h4>
           <p>
             <strong>Editorial Photography:</strong> Photography for magazines,
             newspapers, or online publications, often telling a story or
