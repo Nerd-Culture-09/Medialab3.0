@@ -79,20 +79,15 @@ export function Photography() {
               </motion.div>
 
               <div>
-                <div className="flex justify-between items-start p-4">
+                <div className="flex justify-between items-center p-4">
                   <div>
                     <motion.h3
                       layoutId={`title-${active.title}-${id}`}
-                      className="font-medium text-white text-base"
+                      className="font-medium text-white text-center text-base"
                     >
                       {active.title}
                     </motion.h3>
-                    <motion.p
-                      layoutId={`description-${active.description}-${id}`}
-                      className="text-gray-400 text-base"
-                    >
-                      {active.description}
-                    </motion.p>
+                    
                   </div>
 
                   <motion.a
@@ -193,29 +188,32 @@ const cards = [
   {
     icon: <Camera className="flex items-center w-8 h-8 justify-center text-xl font-bold "/>,
     title: "Photography",
-    description: "High-quality photography services to capture moments and create stunning visuals.",
+    description: "We specialise in commercial, editorial, Lifestyle and product photography, from large scale advertising & social media campaigns to behind-the-scenes photos on set.",
     src: "/photography2.jpg",
     ctaText: "Let's Chat",
     ctaLink: "https://wa.me/26651910760",
     content: () => {
       return (
         <div>
+          <h1>Capture Life's Best Moments with Our Professional Photography Services.</h1>
+          <br></br>
+          
+          <p> At Media Lab, we believe every moment is worth remembering. Whether you need stunning portraits, vibrant event photography, or captivating commercial images, our experienced photographers are here to bring your vision to life. We specialise in a wide range of photography services, including:</p>
+          
+          <br></br>
+          
           <p>
-            <strong>Editorial Photography:</strong> Photography for magazines,
-            newspapers, or online publications, often telling a story or
-            conveying a message.
+            <strong>Potrait Photography:</strong> Beautifully crafted portraits that capture the essence of your personality or brand.
           </p>
           <p>
-            <strong>Product Photography:</strong> Capturing images of products
-            for marketing and advertising purposes.
+            <strong>Event Photography:</strong> From weddings to corporate events, we document your special occasions with an artistic eye and attention to detail.
           </p>
           <p>
-            <strong>Lifestyle Photography:</strong> Capturing images that
-            portray everyday life and real-life situations.
+            <strong>Commercial Photography:</strong> Elevate your business with high-quality images that highlight your products, services, or team.
           </p>
+          <br></br>
           <p>
-            <strong>Aerial and Drone Photography:</strong> Capturing images or
-            video from an elevated perspective using drones.
+            Our commitment to quality and creativity ensures that you receive images that not only meet but exceed your expectations. We take pride in offering a personalized experience, tailoring our approach to suit your unique needs and style.
           </p>
           
         </div>
@@ -225,7 +223,7 @@ const cards = [
   {
     icon: <Video className="w-8 h-8" />,
     title: "Video Production",
-    description: "Professional video production services to create compelling and engaging content.",
+    description: "We're here to build everything you ned to bring an idea to life - from direction, set design & cinematography to aerial videography, sound recording & more.",
     src: "/videographer.png",
     ctaText: "Let's Chat",
     ctaLink: "https://wa.me/26651910760",
@@ -233,26 +231,16 @@ const cards = [
       return (
         <div>
           <p>
-            <strong>Pre-production:</strong> Planning the video, including
-            scriptwriting, storyboarding, and location scouting.
+            Bring your vision to life with our top-tier video production services. At Media Lab, we specialize in creating compelling and high-quality video content that captures your brand's essence and engages your audience. Whether you need promotional videos, corporate presentations, event coverage, or creative storytelling, our team of experts handles every aspect from concept to completion. With cutting-edge equipment, skilled professionals, and a commitment to excellence, we deliver visuallly stunning and impactful videos tailored to meet your goals. Let's tell your story in a way that stands out!
           </p>
-          <p>
-            <strong>Production:</strong> Filming the video with cameras,
-            lighting, and sound equipment. This is where actors or presenters
-            perform.
-          </p>
-          <p>
-            <strong>Post-production:</strong> Editing the footage, adding
-            effects, and finalizing the video for distribution.
-          </p>
-        </div>
+            </div>
       );
     },
   },
   {
     icon: <Film className="w-8 h-8" />,
     title: "Animation",
-    description: "High-quality animation services to bring your ideas to life with motion graphics.",
+    description: "Whether you need infographics, atmospherics or character animation, we provide everything from 2D/3D animation & design to motion tracking, CGI & beyond.",
     src: "/animation.jpg",
     ctaText: "Let's Chat",
     ctaLink: "https://wa.me/26651910760",
@@ -260,21 +248,17 @@ const cards = [
       return (
         <div>
           <p>
-            <strong>Concept Development:</strong> Creating the storyline,
-            characters, and visual style for the animation.
+            Bring your ideas to life with our professional animation services. Whether you're looking to crate captivating explainer videos, dynamic motion graphics, or engaging character animations, we've got you covered. Our team of skilled animators combines creativity with cutting-edge technology to deliver stunning visuals that resonate with your audience.
           </p>
+          <br></br>
           <p>
-            <strong>Storyboarding:</strong> Sketching out the scenes to plan the
-            flow and composition of the animation.
+            From concept development to final production, we collaborate closely with you to ensure that every frame reflects your vision. Whether it's for marketing, education, or entertainment, our animations are designed to leave a lasting impact. 
           </p>
+          <br></br>
           <p>
-            <strong>Animation Production:</strong> Using software to create the
-            animated sequences, whether 2D or 3D.
+            Let us help you tell your story in a way that is visually compelling and memorable. Explore the endless possibilities of animation with us today!
           </p>
-          <p>
-            <strong>Postproduction:</strong> Adding sound effects, music, and
-            final touches to complete the animation.
-          </p>
+         
         </div>
       );
     },
@@ -289,23 +273,34 @@ const cards = [
     content: () => {
       return (
         <div>
+          <h1> At Media Lab, we take your raw footage and transform it into a polished masterpiece through our comprehensive post-production services. Our team of skilled editors and visual artists in dedicated t oengancing your content with precision and crativity. From cutting-edge editing and seamless transitions to vibrant color grading and meticulous sound design, we ensure everyt detail is perfected to deliver a final product that exceeds expectations.</h1> <br />
+          
+          <p> Our Post-Production Services Include:</p>
          <p>
-            <strong>Audio Editing:</strong> Cleaning up audio tracks by removing
-            noise, adjusting levels, and adding effects like compression and
-            EQ.
+            <strong>Video Editing:</strong> Crafting compelling narratives through expert editing, ensuring a smooth flow and engaging storyline.
           </p>
           <p>
-            <strong>Video Editing:</strong> Cutting and arranging clips, color
-            grading, adding transitions, and syncing audio with video.
+            <strong>Color Grading:</strong> Applying professional color correction and grading to enhance the visual appeal and consistency of your footage.
           </p>
           <p>
-            <strong>Photo Editing:</strong> Retouching images, adjusting
-            exposure, color correction, and applying filters using software like
-            Adobe Photoshop or Lightroom.
+            <strong>Sound Design:</strong> Adding and refining audio elements, including dialogue, sound effects, and music, to create a rich auditory experience.
           </p>
           <p>
-            <strong>Rendering and Exporting:</strong> Finalizing the edited
-            content by exporting it in the desired format for distribution.
+            <strong>Visual Effects:</strong> Integrating stunning visual effects to elevate your content and create a memorable impact.
+          </p>
+          <p>
+            <strong>Motion Graphics:</strong> Designing custom graphics and animations to add flair and clarity to your project.
+          </p>
+          <p>
+            <strong>Final Mastering:</strong> Polishing the final cut to meet industry standards, ensuring your content is ready for distribution across all platforms.
+          </p>
+          <br />
+          <p>
+            Whether you're working on a commercial, corporate video, or creative project, Media Lab's post-production services are designed to bring your vision to life with unparalleled quality.</p>
+
+           <br />
+
+             <p> Let us handle the details so you can focus on what matters most- telling your story.
           </p>
         </div>
       );
@@ -314,7 +309,7 @@ const cards = [
   {
     icon: <Palette className="w-8 h-8" />,
     title: "Creative Development",
-    description: "Innovative creative development to bring your ideas to life with visual and thematic concepts.",
+    description: "From conceptualising, scripting, and storyboarding to casting, location scouting and crewing - our pre-production services arethe foundation of a successful project.",
     src: "/camera.jpg",
     ctaText: "Let's Chat",
     ctaLink: "https://wa.me/26651910760",
@@ -322,60 +317,17 @@ const cards = [
       return (
         <div>
           <p>
-            <strong>Brainstorming:</strong> Collaborating with a team to
-            generate ideas for campaigns, projects, or content.
+          Unlock the full potential of your brand with our Creative Development service. At Media Lab, we specialize in turning innovative ideas to compelling content that resonates with your audience. Whether you are launching a new campaign, refining your brand identity, or crating impactful multimedia content, our team of creative experts is here to guide you from concept to completion.
           </p>
+          <br />
           <p>
-            <strong>Conceptualization:</strong> Developing a clear and
-            actionable plan for the creative idea, including visual and thematic
-            elements.
-          </p>
+            Our Creative Development service includes brainstorming sessions, concept cration, scriptwriting, storyboarding, and visual design, ensuring that every project is tailored to your unique vision and goals. We collaborate closely with you to develop original content that not only captures attention but also drives results. From digital media to print and beyond, we craft engaging experiences that elevatge your brand and connect with your audience on a deeper level.
+          </p> 
+       <br></br>
           <p>
-            <strong>Prototyping:</strong> Creating mockups, storyboards, or
-            sample content to visualize the concept.
+            Experience the difference that thoughtful, strategic creative development can make. Let us bring your vision to life.
           </p>
-          <p>
-            <strong>Execution:</strong> Bringing the concept to life through
-            production, whether it’s video, photography, graphic design, or
-            another medium.
-          </p>
-          <p>
-            <strong>Review and Iteration:</strong> Refining the creative work
-            based on feedback and making adjustments to improve the final
-            product.
-          </p>
-        </div>
-      );
-    },
-  },
-  {
-    icon: <Briefcase className="w-8 h-8" />,
-    title: "Studio Facilities & Equipment",
-    description: "Premium facilities and equipment to support your creative projects.",
-    src: "/camera.jpg",
-    ctaText: "Let's Chat",
-    ctaLink: "https://wa.me/26651910760",
-    content: () => {
-      return (
-        <div>
-          <p>
-            <strong>Equipment Selection:</strong> Choose microphones, audio
-            interfaces, headphones, and recording software.
-          </p>
-          <p>
-            <strong>Acoustic Treatment:</strong> Enhance the recording space by
-            reducing echo and background noise using foam panels or portable
-            sound booths.
-          </p>
-          <p>
-            <strong>Microphone Placement:</strong> Position the microphone
-            correctly to capture clear and consistent audio.
-          </p>
-          <p>
-            <strong>Recording Setup:</strong> Use software like Audacity, Adobe
-            Audition, or GarageBand to record and monitor audio levels in
-            real-time.
-          </p>
+         
         </div>
       );
     },
