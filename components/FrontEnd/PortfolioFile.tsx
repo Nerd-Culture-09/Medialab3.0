@@ -3,6 +3,7 @@
 import { CardDemo } from "./CardDemo";
 import { CarouselPlugin } from "./Album";
 import { Cover } from "../ui/cover";
+import VideoPlayer from './VideoPlayer';
 
 export default function PortfolioFile() {
   
@@ -36,8 +37,15 @@ export default function PortfolioFile() {
     { type: "Photography", imageUrl: "/waves3.jpg" },
   ];
   
-  const data: VideoData[] = [
-    { type: "Video Production", imageUrl: "https://www.youtube.com/watch?v=Zrs9J4JDdx0" },
+  // const data: VideoData[] = [
+  //   { type: "Video Production", imageUrl: "https://www.youtube.com/embed/Zrs9J4JDdx0" },
+  // ];
+  const data: { videoUrl: string }[] = [
+    { videoUrl: "https://www.youtube.com/watch?v=kUfO5y7ONmA&t=1s" },
+    { videoUrl: "https://www.youtube.com/watch?v=7NTRcYbExv8" },
+    { videoUrl: "https://www.youtube.com/watch?v=HEwGCDGIA1o" },
+    { videoUrl: "https://www.youtube.com/watch?v=Zrs9J4JDdx0" },
+
   ];
   return (
     <div className="p-4 sm:p-6 md:p-8">
@@ -51,16 +59,14 @@ export default function PortfolioFile() {
         <CarouselPlugin data={data2} />
       </div>
 
-      {/* Cards for the rest of the data */}
-      <div className="flex flex-wrap items-center px-4 max-w-screen-xl mx-auto md:flex md:px-8">
-        {data.map((item: VideoData, index: number) => (
-          <CardDemo
-            key={index}
-            type={item.type}
-            imageUrl={item.imageUrl}
-          />
-        ))}
-      </div>
+      
+      <div className="flex flex-wrap text-center justify-content items-center px-4 max-w-screen-xl mx-auto md:flex md:px-8 gap-6"> 
+      {data.map((item, index) => (
+        <div key={index} > 
+          <VideoPlayer videoUrl={item.videoUrl} />
+        </div>
+      ))}
+    </div>
     </div>
   );
 }

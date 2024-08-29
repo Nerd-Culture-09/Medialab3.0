@@ -347,131 +347,151 @@ return (
 };
 
 const cards = [
-
-{
-
-icon: <Camera className="flex items-center w-8 h-8 justify-center text-xl font-bold "/>,
-
-title: "Photography",
-
-description: "We specialise in commercial, editorial, Lifestyle and product photography, from large scale advertising &amp; social media campaigns to behind-the-scenes photos on set.",
-
-src: "/photography2.jpg",
-
-ctaText: "Let&apos;s Chat",
-
-ctaLink: "https://wa.me/26651910760",
-
-content: () => {
-
-  return (
-
-    <div>
-
-      <h1>Capture Life&apos;s Best Moments with Our Professional Photography Services.</h1>
-
-      <br></br>
-
-      
-
-      <p> At Media Lab, we believe every moment is worth remembering. Whether you need stunning portraits, vibrant event photography, or captivating commercial images, our experienced photographers are here to bring your vision to life. We specialise in a wide range of photography services, including:</p>
-
-      
-
-      <br></br>
-
-      
-
-      <p>
-
-        <strong>Potrait Photography:</strong> Beautifully crafted portraits that capture the essence of your personality or brand.
-
-      </p>
-
-      <p>
-
-        <strong>Event Photography:</strong> From weddings to corporate events, we document your special occasions with an artistic eye and attention to detail.
-
-      </p>
-
-      <p>
-
-        <strong>Commercial Photography:</strong> Elevate your business with high-quality images that highlight your products, services, or team.
-
-      </p>
-
-      <br></br>
-
-      <p>
-
-        Our commitment to quality and creativity ensures that you receive images that not only meet but exceed your expectations. We take pride in offering a personalized experience, tailoring our approach to suit your unique needs and style.
-
-      </p>
-
-      
-
-    </div>
-
-  );
-
-},
-
-},
-
-{
-
-icon: <Video className="w-8 h-8" />,
-
-title: "Video Production",
-
-description: "We&apos;re here to build everything you ned to bring an idea to life - from direction, set design &amp; cinematography to aerial videography, sound recording &amp; more.",
-
-src: "/videographer.png",
-
-ctaText: "Let&apos;s Chat",
-
-ctaLink: "https://wa.me/26651910760",
-
-content: () => {
-
-  return (
-
-    <div>
-
-      <p>
-
-        Bring your vision to life with our top-tier video production services. At Media Lab, we specialize in creating compelling and high-quality video content that captures your brand&apos;s essence and engages your audience. Whether you need promotional videos, corporate films, or event coverage, our experienced team is here to deliver exceptional results.
-
-      </p>
-
-      <br></br>
-
-      <p>
-
-        From concept development and scriptwriting to filming and post-production, we handle every aspect of the video production process. Our services include:</p>
-
-      <br></br>
-
-      
-
-      <p><strong>Corporate Videos:</strong> Professional and polished videos that showcase your brand, products, and services.</p>
-
-      <p><strong>Promotional Videos:</strong> Eye-catching videos that highlight your offerings and attract potential customers.</p>
-
-      <p><strong>Event Coverage:</strong> Capture the energy and excitement of your events with dynamic video footage.</p>
-
-      <p><strong>Drone Videography:</strong> Stunning aerial shots that add a unique perspective to your projects.</p>
-
-      <br></br>
-
-      <p>At Media Lab, we understand the power of visual storytelling. Let us help you create videos that not only convey your message but also leave a lasting impact on your audience.</p>
-
-    </div>
-
-  );
-
-},
-
-},
-
+  {
+    icon: <Camera className="flex items-center w-8 h-8 justify-center text-xl font-bold "/>,
+    title: "Photography",
+    description: "We specialise in commercial, editorial, Lifestyle and product photography, from large scale advertising & social media campaigns to behind-the-scenes photos on set.",
+    src: "/photography2.jpg",
+    ctaText: "Let's Chat",
+    ctaLink: "https://wa.me/26651910760",
+    content: () => {
+      return (
+        <div>
+          <h1>Capture Life's Best Moments with Our Professional Photography Services.</h1>
+          <br></br>
+          
+          <p> At Media Lab, we believe every moment is worth remembering. Whether you need stunning portraits, vibrant event photography, or captivating commercial images, our experienced photographers are here to bring your vision to life. We specialise in a wide range of photography services, including:</p>
+          
+          <br></br>
+          
+          <p>
+            <strong>Potrait Photography:</strong> Beautifully crafted portraits that capture the essence of your personality or brand.
+          </p>
+          <p>
+            <strong>Event Photography:</strong> From weddings to corporate events, we document your special occasions with an artistic eye and attention to detail.
+          </p>
+          <p>
+            <strong>Commercial Photography:</strong> Elevate your business with high-quality images that highlight your products, services, or team.
+          </p>
+          <br></br>
+          <p>
+            Our commitment to quality and creativity ensures that you receive images that not only meet but exceed your expectations. We take pride in offering a personalized experience, tailoring our approach to suit your unique needs and style.
+          </p>
+          
+        </div>
+      );
+    },
+  },
+  {
+    icon: <Video className="w-8 h-8" />,
+    title: "Video Production",
+    description: "We're here to build everything you ned to bring an idea to life - from direction, set design & cinematography to aerial videography, sound recording & more.",
+    src: "/videographer.png",
+    ctaText: "Let's Chat",
+    ctaLink: "https://wa.me/26651910760",
+    content: () => {
+      return (
+        <div>
+          <p>
+            Bring your vision to life with our top-tier video production services. At Media Lab, we specialize in creating compelling and high-quality video content that captures your brand's essence and engages your audience. Whether you need promotional videos, corporate presentations, event coverage, or creative storytelling, our team of experts handles every aspect from concept to completion. With cutting-edge equipment, skilled professionals, and a commitment to excellence, we deliver visuallly stunning and impactful videos tailored to meet your goals. Let's tell your story in a way that stands out!
+          </p>
+            </div>
+      );
+    },
+  },
+  {
+    icon: <Film className="w-8 h-8" />,
+    title: "Animation",
+    description: "Whether you need infographics, atmospherics or character animation, we provide everything from 2D/3D animation & design to motion tracking, CGI & beyond.",
+    src: "/animation.jpg",
+    ctaText: "Let's Chat",
+    ctaLink: "https://wa.me/26651910760",
+    content: () => {
+      return (
+        <div>
+          <p>
+            Bring your ideas to life with our professional animation services. Whether you're looking to crate captivating explainer videos, dynamic motion graphics, or engaging character animations, we've got you covered. Our team of skilled animators combines creativity with cutting-edge technology to deliver stunning visuals that resonate with your audience.
+          </p>
+          <br></br>
+          <p>
+            From concept development to final production, we collaborate closely with you to ensure that every frame reflects your vision. Whether it's for marketing, education, or entertainment, our animations are designed to leave a lasting impact. 
+          </p>
+          <br></br>
+          <p>
+            Let us help you tell your story in a way that is visually compelling and memorable. Explore the endless possibilities of animation with us today!
+          </p>
+         
+        </div>
+      );
+    },
+  },
+  {
+    icon: <Edit className="w-8 h-8" />,
+    title: "Post-Production",
+    description: "Expert post-production services to refine and enhance your audio, video, and images.",
+    src: "/camera.jpg",
+    ctaText: "Let's Chat",
+    ctaLink: "https://wa.me/26651910760",
+    content: () => {
+      return (
+        <div>
+          <h1> At Media Lab, we take your raw footage and transform it into a polished masterpiece through our comprehensive post-production services. Our team of skilled editors and visual artists in dedicated t oengancing your content with precision and crativity. From cutting-edge editing and seamless transitions to vibrant color grading and meticulous sound design, we ensure everyt detail is perfected to deliver a final product that exceeds expectations.</h1> <br />
+          
+          <p> Our Post-Production Services Include:</p>
+         <p>
+            <strong>Video Editing:</strong> Crafting compelling narratives through expert editing, ensuring a smooth flow and engaging storyline.
+          </p>
+          <p>
+            <strong>Color Grading:</strong> Applying professional color correction and grading to enhance the visual appeal and consistency of your footage.
+          </p>
+          <p>
+            <strong>Sound Design:</strong> Adding and refining audio elements, including dialogue, sound effects, and music, to create a rich auditory experience.
+          </p>
+          <p>
+            <strong>Visual Effects:</strong> Integrating stunning visual effects to elevate your content and create a memorable impact.
+          </p>
+          <p>
+            <strong>Motion Graphics:</strong> Designing custom graphics and animations to add flair and clarity to your project.
+          </p>
+          <p>
+            <strong>Final Mastering:</strong> Polishing the final cut to meet industry standards, ensuring your content is ready for distribution across all platforms.
+          </p>
+          <br />
+          <p>
+            Whether you're working on a commercial, corporate video, or creative project, Media Lab's post-production services are designed to bring your vision to life with unparalleled quality.</p>
+
+           <br />
+
+             <p> Let us handle the details so you can focus on what matters most- telling your story.
+          </p>
+        </div>
+      );
+    },
+  },
+  {
+    icon: <Palette className="w-8 h-8" />,
+    title: "Creative Development",
+    description: "From conceptualising, scripting, and storyboarding to casting, location scouting and crewing - our pre-production services arethe foundation of a successful project.",
+    src: "/camera.jpg",
+    ctaText: "Let's Chat",
+    ctaLink: "https://wa.me/26651910760",
+    content: () => {
+      return (
+        <div>
+          <p>
+          Unlock the full potential of your brand with our Creative Development service. At Media Lab, we specialize in turning innovative ideas to compelling content that resonates with your audience. Whether you are launching a new campaign, refining your brand identity, or crating impactful multimedia content, our team of creative experts is here to guide you from concept to completion.
+          </p>
+          <br />
+          <p>
+            Our Creative Development service includes brainstorming sessions, concept cration, scriptwriting, storyboarding, and visual design, ensuring that every project is tailored to your unique vision and goals. We collaborate closely with you to develop original content that not only captures attention but also drives results. From digital media to print and beyond, we craft engaging experiences that elevatge your brand and connect with your audience on a deeper level.
+          </p> 
+       <br></br>
+          <p>
+            Experience the difference that thoughtful, strategic creative development can make. Let us bring your vision to life.
+          </p>
+         
+        </div>
+      );
+    },
+  },
 ];
