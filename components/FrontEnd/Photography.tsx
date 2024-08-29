@@ -128,14 +128,15 @@ return (
 
               priority
 
-              width={200}
+              width={1000}
 
-              height={200}
+              height={1000}
 
               src={active.src}
 
               alt={active.title}
 
+              quality={100}
               className="w-full h-80 lg:h-80 sm:rounded-tr-lg sm:rounded-tl-lg object-cover object-top"
 
             />
@@ -348,36 +349,27 @@ return (
 
 const cards = [
   {
-    icon: <Camera className="flex items-center w-8 h-8 justify-center text-xl font-bold "/>,
-    title: "Photography",
-    description: "We specialise in commercial, editorial, Lifestyle and product photography, from large scale advertising & social media campaigns to behind-the-scenes photos on set.",
-    src: "/photography2.jpg",
+    icon: <Palette className="w-8 h-8" />,
+    title: "Creative Development",
+    description: "From conceptualising, scripting, and storyboarding to casting, location scouting and crewing - our pre-production services arethe foundation of a successful project.",
+    src: "/creativedevelopmentservice.png",
     ctaText: "Let's Chat",
     ctaLink: "https://wa.me/26651910760",
     content: () => {
       return (
         <div>
-          <h1>Capture Life's Best Moments with Our Professional Photography Services.</h1>
-          <br></br>
-          
-          <p> At Media Lab, we believe every moment is worth remembering. Whether you need stunning portraits, vibrant event photography, or captivating commercial images, our experienced photographers are here to bring your vision to life. We specialise in a wide range of photography services, including:</p>
-          
-          <br></br>
-          
           <p>
-            <strong>Potrait Photography:</strong> Beautifully crafted portraits that capture the essence of your personality or brand.
+          Unlock the full potential of your brand with our Creative Development service. At Media Lab, we specialize in turning innovative ideas to compelling content that resonates with your audience. Whether you are launching a new campaign, refining your brand identity, or crating impactful multimedia content, our team of creative experts is here to guide you from concept to completion.
           </p>
+          <br />
           <p>
-            <strong>Event Photography:</strong> From weddings to corporate events, we document your special occasions with an artistic eye and attention to detail.
-          </p>
+            Our Creative Development service includes brainstorming sessions, concept cration, scriptwriting, storyboarding, and visual design, ensuring that every project is tailored to your unique vision and goals. We collaborate closely with you to develop original content that not only captures attention but also drives results. From digital media to print and beyond, we craft engaging experiences that elevatge your brand and connect with your audience on a deeper level.
+          </p> 
+       <br></br>
           <p>
-            <strong>Commercial Photography:</strong> Elevate your business with high-quality images that highlight your products, services, or team.
+            Experience the difference that thoughtful, strategic creative development can make. Let us bring your vision to life.
           </p>
-          <br></br>
-          <p>
-            Our commitment to quality and creativity ensures that you receive images that not only meet but exceed your expectations. We take pride in offering a personalized experience, tailoring our approach to suit your unique needs and style.
-          </p>
-          
+         
         </div>
       );
     },
@@ -386,7 +378,7 @@ const cards = [
     icon: <Video className="w-8 h-8" />,
     title: "Video Production",
     description: "We're here to build everything you ned to bring an idea to life - from direction, set design & cinematography to aerial videography, sound recording & more.",
-    src: "/videographer.png",
+    src: "/videoproductionservice.jpg",
     ctaText: "Let's Chat",
     ctaLink: "https://wa.me/26651910760",
     content: () => {
@@ -403,7 +395,7 @@ const cards = [
     icon: <Film className="w-8 h-8" />,
     title: "Animation",
     description: "Whether you need infographics, atmospherics or character animation, we provide everything from 2D/3D animation & design to motion tracking, CGI & beyond.",
-    src: "/animation.jpg",
+    src: "/animationservice.png",
     ctaText: "Let's Chat",
     ctaLink: "https://wa.me/26651910760",
     content: () => {
@@ -429,7 +421,7 @@ const cards = [
     icon: <Edit className="w-8 h-8" />,
     title: "Post-Production",
     description: "Expert post-production services to refine and enhance your audio, video, and images.",
-    src: "/camera.jpg",
+    src: "/postproductionservice.png",
     ctaText: "Let's Chat",
     ctaLink: "https://wa.me/26651910760",
     content: () => {
@@ -468,28 +460,38 @@ const cards = [
       );
     },
   },
+  
   {
-    icon: <Palette className="w-8 h-8" />,
-    title: "Creative Development",
-    description: "From conceptualising, scripting, and storyboarding to casting, location scouting and crewing - our pre-production services arethe foundation of a successful project.",
-    src: "/camera.jpg",
+    icon: <Camera className="flex items-center w-8 h-8 justify-center text-xl font-bold "/>,
+    title: "Photography",
+    description: "We specialise in commercial, editorial, Lifestyle and product photography, from large scale advertising & social media campaigns to behind-the-scenes photos on set.",
+    src: "/photographyservice.jpg",
     ctaText: "Let's Chat",
     ctaLink: "https://wa.me/26651910760",
     content: () => {
       return (
         <div>
+          <h1>Capture Life's Best Moments with Our Professional Photography Services.</h1>
+          <br></br>
+          
+          <p> At Media Lab, we believe every moment is worth remembering. Whether you need stunning portraits, vibrant event photography, or captivating commercial images, our experienced photographers are here to bring your vision to life. We specialise in a wide range of photography services, including:</p>
+          
+          <br></br>
+          
           <p>
-          Unlock the full potential of your brand with our Creative Development service. At Media Lab, we specialize in turning innovative ideas to compelling content that resonates with your audience. Whether you are launching a new campaign, refining your brand identity, or crating impactful multimedia content, our team of creative experts is here to guide you from concept to completion.
+            <strong>Potrait Photography:</strong> Beautifully crafted portraits that capture the essence of your personality or brand.
           </p>
-          <br />
           <p>
-            Our Creative Development service includes brainstorming sessions, concept cration, scriptwriting, storyboarding, and visual design, ensuring that every project is tailored to your unique vision and goals. We collaborate closely with you to develop original content that not only captures attention but also drives results. From digital media to print and beyond, we craft engaging experiences that elevatge your brand and connect with your audience on a deeper level.
-          </p> 
-       <br></br>
-          <p>
-            Experience the difference that thoughtful, strategic creative development can make. Let us bring your vision to life.
+            <strong>Event Photography:</strong> From weddings to corporate events, we document your special occasions with an artistic eye and attention to detail.
           </p>
-         
+          <p>
+            <strong>Commercial Photography:</strong> Elevate your business with high-quality images that highlight your products, services, or team.
+          </p>
+          <br></br>
+          <p>
+            Our commitment to quality and creativity ensures that you receive images that not only meet but exceed your expectations. We take pride in offering a personalized experience, tailoring our approach to suit your unique needs and style.
+          </p>
+          
         </div>
       );
     },
