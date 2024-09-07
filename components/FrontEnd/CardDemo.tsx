@@ -41,10 +41,6 @@ export function CardDemo({ type, imageUrl }: CardDemoProps) {
         
         <div className="absolute w-full h-full top-0 left-0 transition duration-300 group-hover/card:bg-black opacity-60"></div>
 
-        
-        {/* <div className="flex flex-row items-center space-x-4 z-10">
-          <h3 className="text-white font-bold">{type}</h3>
-        </div> */}
       </div>
     </div>
   );
