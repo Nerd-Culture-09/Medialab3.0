@@ -29,7 +29,8 @@ export function CardDemo({ type, imageUrl }: CardDemoProps) {
               className="absolute top-0 left-0 w-full h-full sm:object-cover rounded-md"
               src={imageUrl}
               alt={type}
-              layout="fill"
+              width={1000}
+              height={1000}
             />
           )}
         </div>

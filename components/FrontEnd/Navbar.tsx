@@ -29,7 +29,7 @@ export default function Navbar () {
                         />
                     </Link>
                     <div className="md:hidden" style={{zIndex: 9999}}>
-                      <button className="text-white-700 outline-none p-2 rounded-md focus:border-gray-400 focus:border"
+                      <button className="text-white-700 outline-none p-2 rounded-md focus:border-gray-500 focus:border"
                           onClick={() => setState(!state)} style={{zIndex: 9999}}
                         >
                           {

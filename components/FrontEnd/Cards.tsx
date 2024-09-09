@@ -13,8 +13,8 @@ export default function Cards() {
   }
 
   const data: CardData[] = [
-    { type: "Creative Development", imageUrl: "/creativedevelopment.jpg" },
     { type: "Post Production", imageUrl: "/postproduction.jpg" },
+    { type: "Creative Development", imageUrl: "/creativedevelopment.jpg" },
     { type: "Video production", imageUrl: "/videoproduction.jpg" },
     { type: "Photography", imageUrl: "/morephotography.jpg" },
     
@@ -83,7 +83,7 @@ export default function Cards() {
                 <div
                   key={index}
                   className={`flex w-full transition-transform duration-300 ease-in-out ${
-                    index === currentIndex ? "transform scale-100" : "transform scale-90"
+                    index === currentIndex ? "transform scale-90" : "transform scale-90"
                   }`}
                 >
                   <CardDemo
