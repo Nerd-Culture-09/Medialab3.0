@@ -9,9 +9,9 @@ interface CardDemoProps {
   imageUrl: string;
 }
 
-export function CardDemo({ type,dDemoProps) {
+export function CardDemo({ type, imageUrl }: CardDemoProps) {
   const isYouTubeVideo = imageUrl.includes("youtube.com") || imageUrl.includes("youtu.be") || imageUrl.includes("youtube.com/embed");
-
+  // testing to push
   return (
     <div className="p-4">
       <div className="cursor-pointer overflow-hidden relative card h-80 w-80 rounded-md shadow-xl max-w-sm ml-0 sm:mx-auto flex flex-col justify-between p-4">
