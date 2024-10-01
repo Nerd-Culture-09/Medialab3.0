@@ -385,7 +385,7 @@ const cards = [
       return (
         <div>
           <p>
-            Bring your vision to life with our top-tier video production services. At Media Lab, we specialize in creating compelling and high-quality video content that captures your brand's essence and engages your audience. Whether you need promotional videos, corporate presentations, event coverage, or creative storytelling, our team of experts handles every aspect from concept to completion. With cutting-edge equipment, skilled professionals, and a commitment to excellence, we deliver visuallly stunning and impactful videos tailored to meet your goals. Let's tell your story in a way that stands out!
+            Bring your vision to life with our top-tier video production services. At Media Lab, we specialize in creating compelling and high-quality video content that captures your brand&apos;s essence and engages your audience. Whether you need promotional videos, corporate presentations, event coverage, or creative storytelling, our team of experts handles every aspect from concept to completion. With cutting-edge equipment, skilled professionals, and a commitment to excellence, we deliver visuallly stunning and impactful videos tailored to meet your goals. Let&apos;s tell your story in a way that stands out!
           </p>
             </div>
       );
@@ -402,11 +402,11 @@ const cards = [
       return (
         <div>
           <p>
-            Bring your ideas to life with our professional animation services. Whether you're looking to crate captivating explainer videos, dynamic motion graphics, or engaging character animations, we've got you covered. Our team of skilled animators combines creativity with cutting-edge technology to deliver stunning visuals that resonate with your audience.
+            Bring your ideas to life with our professional animation services. Whether you&apos;re looking to crate captivating explainer videos, dynamic motion graphics, or engaging character animations, we&apos;ve got you covered. Our team of skilled animators combines creativity with cutting-edge technology to deliver stunning visuals that resonate with your audience.
           </p>
           <br></br>
           <p>
-            From concept development to final production, we collaborate closely with you to ensure that every frame reflects your vision. Whether it's for marketing, education, or entertainment, our animations are designed to leave a lasting impact. 
+            From concept development to final production, we collaborate closely with you to ensure that every frame reflects your vision. Whether it&apos;s for marketing, education, or entertainment, our animations are designed to leave a lasting impact. 
           </p>
           <br></br>
           <p>
@@ -450,7 +450,7 @@ const cards = [
           </p>
           <br />
           <p>
-            Whether you're working on a commercial, corporate video, or creative project, Media Lab's post-production services are designed to bring your vision to life with unparalleled quality.</p>
+            Whether you&apos;re working on a commercial, corporate video, or creative project, Media Lab&apos;s post-production services are designed to bring your vision to life with unparalleled quality.</p>
 
            <br />
 
@@ -471,7 +471,7 @@ const cards = [
     content: () => {
       return (
         <div>
-          <h1>Capture Life's Best Moments with Our Professional Photography Services.</h1>
+          <h1>Capture Life&apos;s Best Moments with Our Professional Photography Services.</h1>
           <br></br>
           
           <p> At Media Lab, we believe every moment is worth remembering. Whether you need stunning portraits, vibrant event photography, or captivating commercial images, our experienced photographers are here to bring your vision to life. We specialise in a wide range of photography services, including:</p>
