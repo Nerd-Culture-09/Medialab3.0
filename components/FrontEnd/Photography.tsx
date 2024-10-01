@@ -237,7 +237,7 @@ return (
 
         onClick={() => setActive(card)}
 
-        className="rounded-2xl h-full w-full p-4 overflow-hidden flex flex-col bg-black border border-white rounded-xl cursor-pointer hover:bg-neutral-50 dark:hover:bg-neutral-800"
+        className="rounded-2xl h-full w-full p-4 overflow-hidden flex flex-col bg-black border border-white cursor-pointer hover:bg-neutral-50 dark:hover:bg-neutral-800"
 
       >
 

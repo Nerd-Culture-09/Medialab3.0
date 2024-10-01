@@ -9,7 +9,7 @@ interface CardDemoProps {
   imageUrl: string;
 }
 
-export function CardDemo({ type, imageUrl }: CardDemoProps) {
+export function CardDemo({ type,dDemoProps) {
   const isYouTubeVideo = imageUrl.includes("youtube.com") || imageUrl.includes("youtu.be") || imageUrl.includes("youtube.com/embed");
 
   return (
