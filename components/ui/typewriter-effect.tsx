@@ -178,7 +178,7 @@ export const TypewriterEffectSmooth = ({
           repeatType: "reverse",
         }}
         className={cn(
-          "block rounded-sm w-[4px]  h-10 sm:h-6 xl:h-12 bg-blue-500",  //cursor
+          "block rounded-sm w-[4px]  h-10 sm:h-6 xl:h-12 bg-blue-500",  //cursor     
           cursorClassName
         )}
       ></motion.span>
