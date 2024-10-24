@@ -55,8 +55,8 @@ return (
 <>
 
   
-  <div className="py-5 flex w-full justify-center" >
-    <h2 className="max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-bold text-neutral-800 dark:text-neutral-200 font-sans">
+  <div className="mb-16 flex w-full justify-center" >
+    <h2 className="max-w-7xl mx-auto text-xl md:text-5xl font-bold text-neutral-800 dark:text-neutral-200 font-sans">
     Our Services
     </h2>
   </div>

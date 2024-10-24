@@ -8,7 +8,7 @@ export default function Projects() {
 
     return (
         <div className="">
-            <div className="py-5 flex w-full justify-center" >
+            <div className="py-14 flex w-full justify-center" >
                 <h2 className="max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-bold text-neutral-800 dark:text-neutral-200 font-sans">
                 Related Projects
                 </h2>
@@ -24,9 +24,9 @@ export default function Projects() {
                             alt="Description of the image" 
                             />
                             <span className="absolute inset-0 flex items-center justify-center text-white text-sm font-bold opacity-0 hover:opacity-100 bg-black bg-opacity-50 rounded-sm">
-                            Groove Galaxy Episode w/ Scott_2407 LIVE at Quthing Fuleng Guest House
-                                </span>
-                                </a>
+                            Groove Galaxy Episode w/Mlu LIVE at Café What [Stella&apos;s Groove]
+                            </span>
+                        </a>
                     </div>
                 </div>
                 <div className="grid gap-4">
