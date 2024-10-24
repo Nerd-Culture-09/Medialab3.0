@@ -18,7 +18,7 @@ export default function Hero() {
       <CallToAction/>
       
       <Photography />
-      <Cards />
+      {/* <Cards /> */}
       <Projects/>
       </div>
       

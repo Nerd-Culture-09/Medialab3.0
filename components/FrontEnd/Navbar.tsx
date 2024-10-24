@@ -23,9 +23,10 @@ export default function Navbar () {
                     <Link href="/">
                         <Image
                             src="/logo.png" 
-                            width={60} 
-                            height={60}
+                            width={100} 
+                            height={100}
                             alt="Float UI logo"
+                            className="invert"
                         />
                     </Link>
                     <div className="md:hidden" style={{zIndex: 9999}}>

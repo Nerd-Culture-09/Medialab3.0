@@ -54,8 +54,7 @@ export default function Cards() {
   return (
     <section className="py-14">
       <div className="max-w-screen-xl mx-auto px-4">
-       <div className="flex flex-col lg:flex-row text-gray-600 dark:text-gray-300 gap-x-12 md:px-8 relative">
-          <div className="lg:max-w-xl flex-shrink-0 flex flex-col justify-center items-center text-center">
+          <div className="lg:w-full flex-shrink-0 flex flex-col justify-center items-center text-center">
             <div className="mt-6 gap-12 sm:mt-0 md:flex lg:block">
               <div className="max-w-2xl">
                 <h3 className="text-gray-900 dark:text-gray-200 text-3xl font-semibold sm:text-4xl">
@@ -67,6 +66,7 @@ export default function Cards() {
               </div>
             </div>
           </div>
+       <div className="flex flex-col lg:flex-row text-gray-600 dark:text-gray-300 gap-x-12 md:px-8 relative">
 
           <div className="relative flex flex-grow overflow-x-hidden items-center">
             <button

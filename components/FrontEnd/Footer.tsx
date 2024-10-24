@@ -11,10 +11,9 @@ export default function  Footer()  {
     return (
         <footer className="text-black-500 bg-white dark:bg-slate-950 px-4 py-5 max-w-screen-xl mx-auto md:px-8">
             <div className="max-w-lg sm:mx-auto sm:text-center">
-                <Image src="/logo.png" className="w-20 h-20 sm:mx-auto" alt= "logo"width={400} height={400}/>
+                <Image src="/logoo.png" className="w-20 h-20 sm:mx-auto" alt= "logo"width={400} height={400}/>
                 <p className="leading-relaxed mt-2 text-[15px]">
                 Multimedia Production Company.
-                
                 </p>
            <br></br>
             </div>

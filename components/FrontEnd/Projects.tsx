@@ -8,10 +8,11 @@ export default function Projects() {
 
     return (
         <div className="">
-
-            <h3 className="text-2xl md:text-2xl lg:text-6xl font-semibold max-w-7xl mx-auto text-center mt-6 relative z-20 py-6 bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-neutral-700 to-neutral-700 dark:from-neutral-800 dark:via-white dark:to-white">
-            <Cover>Related Projects</Cover>
-            </h3>
+            <div className="py-5 flex w-full justify-center" >
+                <h2 className="max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-bold text-neutral-800 dark:text-neutral-200 font-sans">
+                Related Projects
+                </h2>
+            </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="grid gap-4">
                         
@@ -19,7 +20,7 @@ export default function Projects() {
                         <a href="https://youtu.be/Zrs9J4JDdx0" target="_blank" rel="noopener noreferrer">
                             <img 
                             className="h-auto max-w-full rounded-lg" 
-                            src="/groovegalaxy1.png" 
+                            src="/groovegalaxy.png" 
                             alt="Description of the image" 
                             />
                             <span className="absolute inset-0 flex items-center justify-center text-white text-sm font-bold opacity-0 hover:opacity-100 bg-black bg-opacity-50 rounded-sm">
@@ -34,11 +35,11 @@ export default function Projects() {
                         <a href="https://youtu.be/b-VsK5c1cGs" target="_blank" rel="noopener noreferrer">
                         <img 
                             className="h-auto max-w-full rounded-lg" 
-                            src="/nkhekhe1.png" 
+                            src="/nkhekhe.png" 
                             alt="Description of the image" 
                             />
-                        <span className="absolute inset-0 flex items-center justify-center text-white text-sm font-bold opacity-0 hover:opacity-100 bg-black bg-opacity-50 rounded-sm">
-                        Nkhekhe Innovations | Revolutionizing the Future
+                            <span className="absolute inset-0 flex items-center justify-center text-white text-sm font-bold opacity-0 hover:opacity-100 bg-black bg-opacity-50 rounded-sm">
+                                Nkhekhe Innovations | Revolutionizing the Future
                             </span>
                         </a>
                     </div>
