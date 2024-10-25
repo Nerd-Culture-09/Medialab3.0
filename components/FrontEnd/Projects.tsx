@@ -9,7 +9,7 @@ export default function Projects() {
     return (
         <div className="">
             <div className="py-14 flex w-full justify-center" >
-                <h2 className="max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-bold text-neutral-800 dark:text-neutral-200 font-sans">
+                <h2 className="max-w-7xl mx-auto text-xl md:text-5xl font-bold text-neutral-800 dark:text-neutral-200 font-sans">
                 Related Projects
                 </h2>
             </div>
@@ -46,8 +46,6 @@ export default function Projects() {
                 </div>
             </div>
         </div>
-
-       
     );
  }
 

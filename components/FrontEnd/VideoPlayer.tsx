@@ -18,14 +18,17 @@ export function VideoPlayer({ videoUrl }: VideoPlayerProps) {
   };
 
   return (
-    <div className="video-container flex justify-center w-full lg:ml-10 ml-4">
+    <div className="video-container flex justify-center w-full lg:ml-10 ml-2">
       {isYouTubeVideo ? (
-        <ReactPlayer
-          url={getValidYouTubeUrl(videoUrl)}
-          controls={true}
-          width="100%"
-          height="100%"
-        />
+        <div className="responsive-player">
+          <ReactPlayer
+            url={getValidYouTubeUrl(videoUrl)}
+            controls={true}
+            width="100%"
+            height="100%"
+            className="react-player"
+          />
+        </div>
       ) : (
         <p>Invalid video URL</p>
       )}

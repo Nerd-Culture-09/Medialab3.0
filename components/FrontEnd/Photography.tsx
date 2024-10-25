@@ -347,7 +347,7 @@ const cards = [
   {
     icon: <Palette className="w-8 h-8" />,
     title: "Creative Development",
-    description: "From conceptualising, scripting, and storyboarding to casting, location scouting and crewing - our pre-production services arethe foundation of a successful project.",
+    description: "From conceptualizing, scripting, and storyboarding to casting, location scouting, and crewing, our pre-production services lay the foundation for a successful project.",
     src: "/creativedevelopmentservice.png",
     ctaText: "Let's Chat",
     ctaLink: "https://wa.me/26651910760",
@@ -355,17 +355,16 @@ const cards = [
       return (
         <div>
           <p>
-          Unlock the full potential of your brand with our Creative Development service. At Media Lab, we specialize in turning innovative ideas to compelling content that resonates with your audience. Whether you are launching a new campaign, refining your brand identity, or crating impactful multimedia content, our team of creative experts is here to guide you from concept to completion.
+          Unlock the full potential of your brand with our Creative Development service. At Media Lab, we specialize in transforming innovative ideas into compelling content that resonates with your audience. Whether you are launching a new campaign, refining your brand identity, or creating impactful multimedia content, our team of creative experts is here to guide you from concept to completion.
           </p>
           <br />
           <p>
-            Our Creative Development service includes brainstorming sessions, concept cration, scriptwriting, storyboarding, and visual design, ensuring that every project is tailored to your unique vision and goals. We collaborate closely with you to develop original content that not only captures attention but also drives results. From digital media to print and beyond, we craft engaging experiences that elevatge your brand and connect with your audience on a deeper level.
+          Our Creative Development service includes brainstorming sessions, concept creation, scriptwriting, storyboarding, and visual design, ensuring that every project is tailored to your unique vision and goals. We collaborate closely with you to develop original content that not only captures attention but also drives results. From digital media to print and beyond, we craft engaging experiences that elevate your brand and connect with your audience on a deeper level.
           </p> 
-       <br></br>
+          <br></br>
           <p>
-            Experience the difference that thoughtful, strategic creative development can make. Let us bring your vision to life.
+          Experience the impact of thoughtful, strategic creative development. Let us bring your vision to life.
           </p>
-         
         </div>
       );
     },
@@ -373,7 +372,7 @@ const cards = [
   {
     icon: <Video className="w-8 h-8" />,
     title: "Video Production",
-    description: "We're here to build everything you ned to bring an idea to life - from direction, set design & cinematography to aerial videography, sound recording & more.",
+    description: "We're here to provide everything you need to bring an idea to life—from direction, set design, and cinematography to aerial videography, sound recording, and more.",
     src: "/videoproductionservice.jpg",
     ctaText: "Let's Chat",
     ctaLink: "https://wa.me/26651910760",
@@ -381,7 +380,7 @@ const cards = [
       return (
         <div>
           <p>
-            Bring your vision to life with our top-tier video production services. At Media Lab, we specialize in creating compelling and high-quality video content that captures your brand&apos;s essence and engages your audience. Whether you need promotional videos, corporate presentations, event coverage, or creative storytelling, our team of experts handles every aspect from concept to completion. With cutting-edge equipment, skilled professionals, and a commitment to excellence, we deliver visuallly stunning and impactful videos tailored to meet your goals. Let&apos;s tell your story in a way that stands out!
+          Bring your vision to life with our top-tier video production services. At Media Lab, we specialize in creating compelling and high-quality video content that captures your brand&apos;s essence and engages your audience. Whether you need promotional videos, corporate presentations, event coverage, or creative storytelling, our team of experts handles every aspect from concept to completion. With cutting-edge equipment, skilled professionals, and a commitment to excellence, we deliver visuallly stunning and impactful videos tailored to meet your goals. Let&apos;s tell your story in a way that stands out!
           </p>
             </div>
       );
@@ -396,9 +395,9 @@ const cards = [
     ctaLink: "https://wa.me/26651910760",
     content: () => {
       return (
-        <div>
+        <div>Bring your vision to life with our top-tier video production services. At Media Lab, we specialize in creating compelling, high-quality video content that captures your brand&apos;s essence and engages your audience. Whether you need promotional videos, corporate presentations, event coverage, or creative storytelling, our team of experts manages every aspect from concept to completion. With cutting-edge equipment, skilled professionals, and a commitment to excellence, we deliver visually stunning and impactful videos tailored to meet your goals. Let&apos;s tell your story in a way that stands out!
           <p>
-            Bring your ideas to life with our professional animation services. Whether you&apos;re looking to crate captivating explainer videos, dynamic motion graphics, or engaging character animations, we&apos;ve got you covered. Our team of skilled animators combines creativity with cutting-edge technology to deliver stunning visuals that resonate with your audience.
+          Bring your ideas to life with our professional animation services. Whether you&apos;re looking to create captivating explainer videos, dynamic motion graphics, or engaging character animations, we&apos;ve got you covered. Our team of skilled animators combines creativity with cutting-edge technology to deliver stunning visuals that resonate with your audience.
           </p>
           <br></br>
           <p>
@@ -406,9 +405,8 @@ const cards = [
           </p>
           <br></br>
           <p>
-            Let us help you tell your story in a way that is visually compelling and memorable. Explore the endless possibilities of animation with us today!
+          Let us help you tell your story in a visually compelling and memorable way. Explore the endless possibilities of animation with us today!
           </p>
-         
         </div>
       );
     },
@@ -423,7 +421,7 @@ const cards = [
     content: () => {
       return (
         <div>
-          <h1> At Media Lab, we take your raw footage and transform it into a polished masterpiece through our comprehensive post-production services. Our team of skilled editors and visual artists in dedicated t oengancing your content with precision and crativity. From cutting-edge editing and seamless transitions to vibrant color grading and meticulous sound design, we ensure everyt detail is perfected to deliver a final product that exceeds expectations.</h1> <br />
+          <h1>At Media Lab, we take your raw footage and transform it into a polished masterpiece through our comprehensive post-production services. Our team of skilled editors and visual artists is dedicated to enhancing your content with precision and creativity. From cutting-edge editing and seamless transitions to vibrant color grading and meticulous sound design, we ensure every detail is perfected to deliver a final product that exceeds expectations.</h1> <br />
           
           <p> Our Post-Production Services Include:</p>
          <p>
