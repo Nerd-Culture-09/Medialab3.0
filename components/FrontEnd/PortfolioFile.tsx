@@ -3,10 +3,10 @@
 import { CardDemo } from "./CardDemo";
 import { CarouselPlugin } from "./Album";
 import { Cover } from "../ui/cover";
-import VideoPlayer from './VideoPlayer';
+import VideoPlayer from "./VideoPlayer";
+import VideoPlayerRow from "./VideoPlayerRow";
 
 export default function PortfolioFile() {
-
   interface VideoData {
     videoUrl: string;
   }
@@ -37,10 +37,10 @@ export default function PortfolioFile() {
   ];
 
   const data: VideoData[] = [
-    { videoUrl: "https://www.youtube.com/watch?v=kUfO5y7ONmA&t=1s" },
-    { videoUrl: "https://www.youtube.com/watch?v=7NTRcYbExv8" },
-    { videoUrl: "https://www.youtube.com/watch?v=HEwGCDGIA1o" },
-    { videoUrl: "https://www.youtube.com/watch?v=Zrs9J4JDdx0" },
+    // { videoUrl: "https://www.youtube.com/watch?v=kUfO5y7ONmA&t=1s" },
+    { videoUrl: "https://youtu.be/b-VsK5c1cGs?si=mC8KATVZUQKIagx4" },
+    { videoUrl: "https://youtu.be/9GQgir1zV1Y?si=-7xLnUYOE4d3h3JK" },
+    { videoUrl: "https://youtu.be/ixumbDgcU5o?si=XKWTywWJGTUJOXlP" },
   ];
 
   return (
@@ -69,7 +69,13 @@ export default function PortfolioFile() {
       <div className="w-full flex flex-wrap text-center justify-center items-center gap-6 px-2 md:px-8">
         {data.map((item, index) => (
           <div key={index} className="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 mr-4">
-            <VideoPlayer videoUrl={item.videoUrl} />
+            <VideoPlayerRow
+              videoUrls={[
+                "https://youtu.be/b-VsK5c1cGs?si=mC8KATVZUQKIagx4",
+                "https://youtu.be/9GQgir1zV1Y?si=-7xLnUYOE4d3h3JK",
+                "https://youtu.be/ixumbDgcU5o?si=XKWTywWJGTUJOXlP",
+              ]}
+            />
           </div>
         ))}
       </div>

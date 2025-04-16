@@ -67,3 +67,24 @@
     @apply bg-background text-foreground;
   }
 }
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #00000000;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #55555500;
+  border-radius: 10px;
+  padding-left: 5px;
+  border: 2px solid #1e1e1e00;
+}
+
+/* Optional for Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #55555541 #00000000;
+}

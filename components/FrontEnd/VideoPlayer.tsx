@@ -1,14 +1,15 @@
 "use client";
 
-import React from 'react';
-import ReactPlayer from 'react-player/youtube';
+import React from "react";
+import ReactPlayer from "react-player/youtube";
 
 interface VideoPlayerProps {
   videoUrl: string;
 }
 
 export function VideoPlayer({ videoUrl }: VideoPlayerProps) {
-  const isYouTubeVideo = videoUrl.includes("youtube.com") || videoUrl.includes("youtu.be");
+  const isYouTubeVideo =
+    videoUrl.includes("youtube.com") || videoUrl.includes("youtu.be");
 
   const getValidYouTubeUrl = (url: string) => {
     if (url.includes("embed")) {

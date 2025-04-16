@@ -1,52 +1,35 @@
 "use client";
-
-
-import {Cover} from "../ui/cover";
+import VideoPlayer from "./VideoPlayer";
+import VideoPlayerRow from "./VideoPlayerRow";
 
 export default function Projects() {
-    
+  interface VideoData {
+    videoUrl: string;
+  }
 
-    return (
-        <div className="">
-            <div className="py-14 flex w-full justify-center" >
-                <h2 className="max-w-7xl mx-auto text-xl md:text-5xl font-bold text-neutral-800 dark:text-neutral-200 font-sans">
-                Related Projects
-                </h2>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="grid gap-4">
-                        
-                    <div className="relative">
-                        <a href="https://youtu.be/Zrs9J4JDdx0" target="_blank" rel="noopener noreferrer">
-                            <img 
-                            className="h-auto max-w-full rounded-lg" 
-                            src="/groovegalaxy.png" 
-                            alt="Description of the image" 
-                            />
-                            <span className="absolute inset-0 flex items-center justify-center text-white text-sm font-bold opacity-0 hover:opacity-100 bg-black bg-opacity-50 rounded-sm">
-                            Groove Galaxy Episode w/Mlu LIVE at Café What [Stella&apos;s Groove]
-                            </span>
-                        </a>
-                    </div>
-                </div>
-                <div className="grid gap-4">
-                        
-                    <div className="relative">
-                        <a href="https://youtu.be/b-VsK5c1cGs" target="_blank" rel="noopener noreferrer">
-                        <img 
-                            className="h-auto max-w-full rounded-lg" 
-                            src="/nkhekhe.png" 
-                            alt="Description of the image" 
-                            />
-                            <span className="absolute inset-0 flex items-center justify-center text-white text-sm font-bold opacity-0 hover:opacity-100 bg-black bg-opacity-50 rounded-sm">
-                                Nkhekhe Innovations | Revolutionizing the Future
-                            </span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    );
- }
-
-        
+  const data: VideoData[] = [
+    { videoUrl: "https://youtu.be/Zrs9J4JDdx0" },
+    { videoUrl: "https://youtu.be/6N5eZf7vXQo?si=OQNTrNmPk5UaL-VD" },
+    { videoUrl: "https://youtu.be/6cvghjGrakU?si=joNJi9a7Gzgm1X7F" },
+    { videoUrl: "https://youtu.be/4v43Mk4IrCo?si=2z6uqddtEmKLKtcZ" },
+  ];
+  return (
+    <div className="">
+      <div className="py-14 flex w-full justify-center">
+        <h2 className="max-w-7xl mx-auto text-xl md:text-5xl font-bold text-neutral-800 dark:text-neutral-200 font-sans">
+          Groove Galaxy
+        </h2>
+      </div>
+      <div className="flex justify-center">
+        <VideoPlayerRow
+          videoUrls={[
+            "https://youtu.be/Zrs9J4JDdx0",
+            "https://youtu.be/6N5eZf7vXQo?si=OQNTrNmPk5UaL-VD",
+            "https://youtu.be/6cvghjGrakU?si=joNJi9a7Gzgm1X7F",
+            "https://youtu.be/4v43Mk4IrCo?si=2z6uqddtEmKLKtcZ",
+          ]}
+        />
+      </div>
+    </div>
+  );
+}
