@@ -1,22 +1,29 @@
 "use client";
 
-import Script from "next/script";
+import { useEffect } from "react";
+import { usePathname, useSearchParams } from "next/navigation";
+import ReactGA from "react-ga4";
 
-const GoogleAnalytics = () => (
-  <>
-    <Script
-      strategy="afterInteractive"
-      src="https://www.googletagmanager.com/gtag/js?id=G-FEX5TMVSQR"
-    />
-    <Script id="google-analytics" strategy="afterInteractive">
-      {`
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-FEX5TMVSQR');
-      `}
-    </Script>
-  </>
-);
+const GA_TRACKING_ID = "G-FEX5TMVSQR";
+
+const GoogleAnalytics = () => {
+  const pathname = usePathname();
+  const searchParams = useSearchParams();
+
+  useEffect(() => {
+    console.log("Initializing GA");
+    ReactGA.initialize(GA_TRACKING_ID);
+    console.log("Is GA initialized?", ReactGA.isInitialized);
+  }, []);
+
+  useEffect(() => {
+    const page = `${pathname}${
+      searchParams.toString() ? "?" + searchParams.toString() : ""
+    }`;
+    ReactGA.send({ hitType: "pageview", page });
+  }, [pathname, searchParams]);
+
+  return null;
+};
 
 export default GoogleAnalytics;

@@ -4,13 +4,15 @@ import { FaWhatsapp } from "react-icons/fa";
 
 export default function CallToAction() {
   return (
-    <div className="mx-auto max-w-2xl py-20 sm:py-30 lg:py-30">
+    <div className="mx-auto -mt-24 max-w-2xl py-20 sm:py-30 lg:py-30">
       <div className="text-center">
         <h1 className="text-3xl font-bold tracking-tight text-gray-300 sm:text-4xl">
-          Crafting Visual Stories That Captivate and Inspire <br/>Your Vision, Our Creation
+          Crafting Visual Stories That Captivate and Inspire <br />
+          Your Vision, Our Creation
         </h1>
         <p className="mt-6 text-lg leading-8 text-gray-500">
-          Everything you need, from planning to post-production, all under one roof.
+          Everything you need, from planning to post-production, all under one
+          roof.
         </p>
         <div className="mt-10 flex items-center justify-center gap-x-6">
           <a
@@ -22,5 +24,5 @@ export default function CallToAction() {
         </div>
       </div>
     </div>
-  )
+  );
 }

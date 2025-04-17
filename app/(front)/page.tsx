@@ -1,12 +1,31 @@
+"use client";
 
 import Hero from "@/components/FrontEnd/Hero";
-import React from "react";
+import React, { useEffect, Suspense } from "react";
+import ReactGA from "react-ga4";
+import { usePathname, useSearchParams } from "next/navigation";
 
+function PageViewTracker() {
+  const pathname = usePathname();
+  const searchParams = useSearchParams();
 
-export default async function Home() {
+  useEffect(() => {
+    const search = searchParams.toString();
+    const page = `${pathname}${search ? `?${search}` : ""}`;
+    console.log("Sending pageview:", page);
+    ReactGA.send({ hitType: "pageview", page });
+  }, [pathname, searchParams]);
+
+  return null; // no UI
+}
+
+export default function Home() {
   return (
-    <section className="">
-      <Hero /> 
-     </section>
+    <section>
+      <Suspense fallback={null}>
+        <PageViewTracker />
+      </Suspense>
+      <Hero />
+    </section>
   );
-} 
+}

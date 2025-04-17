@@ -4,6 +4,7 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/components/ui/theme-provider";
 import GoogleAnalytics from "./Analytics/GoogleAnalytics";
+import { Suspense } from "react";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -28,9 +29,9 @@ export default function RootLayout({
           fontSans.variable
         )}
       >
-        {/* ✅ Place it here inside <body> */}
-        <GoogleAnalytics />
-
+        <Suspense fallback={null}>
+          <GoogleAnalytics />
+        </Suspense>
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
