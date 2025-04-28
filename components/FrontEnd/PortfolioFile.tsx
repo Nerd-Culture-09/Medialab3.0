@@ -66,9 +66,9 @@ export default function PortfolioFile() {
       </div>
 
       {/* Video Players */}
-      <div className="w-full flex flex-wrap text-center justify-center items-center gap-6 px-2 md:px-8">
+      <div className="w-full flex flex-wrap text-center justify-center items-center gap-6  md:px-8">
         {data.map((item, index) => (
-          <div key={index} className="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4">
+          <div key={index} className="">
             <VideoPlayer videoUrl={item.videoUrl} />
           </div>
         ))}

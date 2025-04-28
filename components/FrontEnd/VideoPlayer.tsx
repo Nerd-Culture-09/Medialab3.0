@@ -19,7 +19,7 @@ export function VideoPlayer({ videoUrl }: VideoPlayerProps) {
   };
 
   return (
-    <div className="video-container flex justify-center w-full lg:ml-10 ml-2">
+    <div className="video-container flex justify-center w-full">
       {isYouTubeVideo ? (
         <div className="responsive-player">
           <ReactPlayer

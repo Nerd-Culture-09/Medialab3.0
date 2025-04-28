@@ -1,10 +1,8 @@
 "use client";
 
-import { FaWhatsapp } from "react-icons/fa";
-
 export default function CallToAction() {
   return (
-    <div className="mx-auto -mt-24 max-w-2xl py-20 sm:py-30 lg:py-30">
+    <div className="mx-auto -mt-28 max-w-2xl py-20 sm:py-30 lg:py-30">
       <div className="text-center">
         <h1 className="text-3xl font-bold tracking-tight text-gray-300 sm:text-4xl">
           Crafting Visual Stories That Captivate and Inspire <br />
