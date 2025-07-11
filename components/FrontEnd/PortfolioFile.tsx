@@ -37,10 +37,9 @@ export default function PortfolioFile() {
   ];
 
   const data: VideoData[] = [
-    // { videoUrl: "https://www.youtube.com/watch?v=kUfO5y7ONmA&t=1s" },
-    { videoUrl: "https://youtu.be/b-VsK5c1cGs?si=mC8KATVZUQKIagx4" },
+    { videoUrl: "https://youtu.be/U2PeKN9rHE0?si=P5QeGGO1RwAyrn5f" },
     { videoUrl: "https://youtu.be/9GQgir1zV1Y?si=-7xLnUYOE4d3h3JK" },
-    { videoUrl: "https://youtu.be/ixumbDgcU5o?si=XKWTywWJGTUJOXlP" },
+    { videoUrl: "https://youtu.be/oJurZfLRGmk?si=cFy0BmveIAW4T7uu" },
   ];
 
   return (
